@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    background-color: black;
+    background-image: url('../img/AdobeStock_278252201_Preview.jpeg');
+    min-height: 100vh;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    color: black;
+    font-size: 3rem;
+    margin: auto;
+    margin-top: 10rem;
+    border-radius: 50px;
+    width: 40rem;
+    margin-top: 5rem;
+}
+
+
+label {
+    color: linear-gradient(white, white) padding-box, linear-gradient(to right, #13f78c, #0be6e6, #f700c5);
+    font-size: 3rem;
+    margin: auto;
+    margin-top: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    width: 50rem;
+    height: 5rem;
+    margin: auto;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    background: linear-gradient(white, white) padding-box, linear-gradient(to right, #13f78c, #0be6e6, #f700c5) border-box;
+    border-radius: 50em;
+    border: 3px solid transparent;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #10a87d;
+    padding: 0.5em 1.5em;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 0 0 1.5rem blue;
+}
+
+input {
+    align-items: center;
+    width: 50rem;
+    height: 5rem;
+    font-size: 3rem;
+    margin: auto;
+    margin-top: 10rem;
+    background: linear-gradient(white, white) padding-box, linear-gradient(to right, #13f78c, #0be6e6, #f700c5) border-box;
+    border-radius: 50em;
+    border: 3px solid transparent;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #10a87d;
+    cursor: pointer;
+}
+
+input:focus {
+    box-shadow: 0 0 1.5rem #0be6e6;
+}
+
+input:hover {
+    box-shadow: 0 0 1.5rem blue;
+}
+
+footer {
+    width: 20rem;
+    font-size: 2.5rem;
+    margin-top: 20rem;
+    font-style: italic;
+    margin: auto;
+    background: linear-gradient(white, white) padding-box, linear-gradient(to right, #13f78c, #0be6e6, #f700c5) border-box;
+    border-radius: 50em;
+    border: 3px solid transparent;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #10a87d;
+    cursor: pointer;
+
+}
+
+footer:hover {
+    box-shadow: 0 0 1.5rem blue;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.664);
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 70rem;
+    max-height: 70rem;
+    margin: 2rem auto;
+    min-height: 100vh;
+    border-radius: 30px;
+}
+
+.red {
+    background-color: red;
+}
+.red:hover {
+    box-shadow: 0 0 1.5rem red;
+
+}
+    
+
+.green {
+    background-color: rgb(39, 255, 1);
+}
+.green:hover {
+    box-shadow: 0 0 1.5rem green;
+}
+
+.single-color {
+    color: steelblue;
+}
+
+/* Agora, colocando um degradê */
+.gradient {
+    /* Primeiro passo: definir um degradê como fundo */
+    background-image: linear-gradient(to bottom, rebeccapurple, steelblue, turquoise);
+
+    /* Segundo passo: apagar do fundo tudo que não estiver imediatamente atrás de texto */
+    background-clip: text;
+    -webkit-background-clip: text;
+    /* Alguns navegadores precisam do prefixo */
+
+    /* Terceiro passo: apagar o texto, deixando apenas o fundo atrás dele */
+    -webkit-text-fill-color: transparent;
+
+    /* Cor que contraste com o degradê, caso o navegador não suporte `background-clip: text` */
+    color: black;
+
+}
+
+@media (max-width: 520px) {
+
+    button,
+    input {
+        width: 40rem;
+    }
+    input {
+        margin-top: 5rem;
+    }
+    footer {
+        margin-top: 10rem;
+        margin-bottom: 5rem;
+    }
+    label {
+        margin-top: 10rem;
+    }
+    .red, .green{
+        width: 30rem;
+    }
+
+}
+@media (max-width: 420px) {
+    button,
+    input {
+        width: 30rem;
+    }
+}
+@media (max-width: 320px) {
+    button,
+    input {
+        width: 25rem;
+    }
+    .red,.green {
+        width: 20rem;
+    }
+    input {
+        margin-top: 5rem;
+    }
+}

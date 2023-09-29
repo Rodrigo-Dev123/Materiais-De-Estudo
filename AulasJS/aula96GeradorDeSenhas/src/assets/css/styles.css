@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+:root {
+    --primary-color: #04699c;
+    --primary-color-darker: #0c3449;
+    --gradient: linear-gradient(90deg, rgba(154,12,250,1) 12%, rgba(29,253,217,1) 47%, rgba(228,143,22,1) 85%);
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--primary-color);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    background-image: url(/src/assets/img/AdobeStock_588873961_Preview\ \(1\).jpeg);
+    background-size: cover;
+    background-position: center;
+
+}
+.container {
+    max-width: 640px;
+    margin: 50px auto;
+    background-color: rgba(255, 255, 255, 0.497);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-bottom: 30px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+form input, form label, form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+form input {
+    font-size: 24px;
+    height: 50px;
+    padding: 0 20px;
+}
+form input:focus {
+    outline: 1px solid var(--primary-color);
+}
+form button {
+    border: none;
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700px;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+form button:hover {
+    background: var(--primary-color-darker);
+}
+
+.senha-gerada {
+    font-size: 2em;
+    margin: 40px 0;
+    background-image: linear-gradient(90deg, rgba(154,12,250,1) 8%, rgba(25,162,27,1) 47%, rgba(98,22,228,1) 85%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; 
+    font-weight: bold;
+    margin: 2px, 0;
+
+
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+
+
+button {
+    display: block;
+    margin: 40px 0;
+    font-size: 1em;
+    border-radius: 20px;
+    background: radial-gradient(circle, rgba(137,242,243,1) 0%, rgba(0,212,255,1) 57%, rgba(9,121,82,1) 94%);
+}
+
+label {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a {
+    background-image: linear-gradient(90deg, rgba(7,249,173,1) 10%, rgba(249,108,0,1) 38%, rgb(0, 254, 250) 69%, rgba(0,189,249,1) 99%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; 
+    display: flex;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        max-height: 800px;
+        max-width: 600px;
+        background-size: cover;
+        background-position: center;
+    }
+    body {
+        margin: 15px;
+    }
+    a {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .senha-gerada {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 348px) and (max-width: 380px) {
+    label {
+        font-size: 16px;
+    }
+}
