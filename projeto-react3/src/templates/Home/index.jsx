@@ -1,37 +1,42 @@
-import { useState } from "react";
-import { useFetch } from "./use-fetch";
+import { useState, useEffect, useDebugValue } from "react";
 
-export const Home = () => {
-  const [postId, setPostId] = useState('');
-  const [result, loading] = useFetch('https://jsonplaceholder.typicode.com/posts/' + postId, {
-    headers: {
-      abc: '1' + postId,
-    }
+const useMediaQuery = (queryValue) => {
+  const [match, setMatch] = useState(false);
+
+  useDebugValue(`Query: ${queryValue}`, (name) => {
+    return name + ' modificado';
   });
 
-  if (loading) {
-    return <p>Loading...</p>
-  }
+  useEffect(() => {
+    let isMounted = true;
+    const matchMedia = window.matchMedia(queryValue);
 
-  const handleClick = (id) => {
-    setPostId(id);
-  };
+    const handleChange = () => {
+      if (!isMounted) return;
+      setMatch(Boolean(matchMedia.matches));
+    };
 
-  if (!loading && result) {
-    return (
-      <div>
-        {result?.length > 0 ?
-          result.map(p => (
-            <div key={`post-${p.id}`} onClick={() => handleClick(p.id)}>
-              <p>{p.title}</p>
-            </div>
-          )) : (
-            <div onClick={() => handleClick('')}>
-              <p>{result.title}</p>
-            </div>
-          )}
-      </div>
-    )
-  }
-  return <h1>Oi</h1>
+    matchMedia.addEventListener('change', handleChange);
+    setMatch(!!matchMedia.matches);
+
+    return () => {
+      isMounted = false;
+      matchMedia.removeEventListener('change', handleChange);
+    }
+  }, [queryValue]);
+
+  return match;
+};
+
+export const Home = () => {
+  const huge = useMediaQuery('(min-width: 980px)');
+  const big = useMediaQuery('(max-width: 979px) and (min-width: 768px)');
+  const medium = useMediaQuery('(max-width: 767px) and (min-width: 321px)');
+  const small = useMediaQuery('(max-width: 321px)');
+
+  const background = huge ? 'green' : big ? 'red' : medium ? 'yellow' : small ? 'purple' : null;
+
+  return (
+    <div style={{ fontSize: '60px', background}}>Oi</div>
+  )
 };
