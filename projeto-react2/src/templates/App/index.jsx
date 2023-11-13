@@ -5,7 +5,7 @@ import './styles.css';
 
 
 // App.jsx
-function App() {
+export function App() {
   return (
     <CounterProvider>
       <PostsProvider>
@@ -17,5 +17,3 @@ function App() {
 
   );
 }
-
-export default App;
