@@ -22,7 +22,7 @@ module.exports = {
           model: 'alunos',
           key: 'id',
         },
-        onDelete: 'CASCADE',
+        onDelete: 'SET NULL',
         onUpdate: 'CASCADE',
       },
       created_at: {
