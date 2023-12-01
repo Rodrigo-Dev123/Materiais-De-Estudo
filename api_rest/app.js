@@ -1,5 +1,9 @@
 import dotenv from 'dotenv';
 import express from 'express';
+import cors from 'cors';
+import helmet from 'helmet';
+
+import { resolve } from 'path';
 import { openDb } from './src/config/configDB';
 
 dotenv.config();
@@ -13,6 +17,22 @@ import tokenRoutes from './src/routes/tokenRoutes';
 import alunoRoutes from './src/routes/alunoRoutes';
 import photoRoutes from './src/routes/photoRoutes';
 
+const whiteList = [
+  'http://localhost:3001',
+  'http://localhost:3002',
+  'http://localhost:3000',
+];
+
+const corsOptions = {
+  origin(origin, callback) {
+    if (whiteList.indexOf(origin) !== -1 || !origin) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+};
+
 class App {
   constructor() {
     this.app = express();
@@ -21,8 +41,11 @@ class App {
   }
 
   middlewares() {
+    this.app.use(cors(corsOptions));
+    this.app.use(helmet());
     this.app.use(express.urlencoded({ extended: true }));
     this.app.use(express.json());
+    this.app.use(express.static(resolve(__dirname, 'uploads')));
   }
 
   routes() {
