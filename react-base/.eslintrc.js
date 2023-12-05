@@ -43,5 +43,6 @@ module.exports = {
     'no-console': 'off',
     'default-param-last': 'off',
     'func-names': 'off',
+    'camelcase': 'off'
   },
 };
