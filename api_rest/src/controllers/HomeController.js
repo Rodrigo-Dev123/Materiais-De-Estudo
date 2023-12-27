@@ -1,6 +1,6 @@
 class HomeController {
   async index(req, res) {
-    res.json({ "status": "api is running!" });
+    res.json({ status: 'api is running!' });
   }
 }
 

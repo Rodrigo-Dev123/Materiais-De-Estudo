@@ -4,6 +4,7 @@ import P from 'prop-types';
 import { Container } from './styled';
 
 export default function Loading({ isLoading }) {
+  // eslint-disable-next-line
   if (!isLoading) return <></>;
   return (
     <Container>
