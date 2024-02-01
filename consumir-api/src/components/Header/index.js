@@ -10,6 +10,7 @@ import {
 import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 
+import UserProfile from '../UserProfile/index';
 import * as actions from '../../store/modules/auth/actions';
 import history from '../../Services/history';
 import { Nav } from './styled';
@@ -44,6 +45,7 @@ export default function Header() {
       )}
 
       {IsLoggedin && <FaCircle size={24} color="#00ff00" />}
+      <UserProfile />
     </Nav>
   );
 }

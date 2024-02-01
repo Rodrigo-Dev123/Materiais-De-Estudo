@@ -45,5 +45,6 @@ module.exports = {
     'func-names': 'off',
     'camelcase': 'off',
     'react/jsx-no-bind': 'off',
+    'jsx-a11y/label-has-associated-control': 'off',
   },
 };
