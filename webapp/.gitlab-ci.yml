@@ -1,0 +1,23 @@
+image: node:20.11.1-alpine3.18
+
+stages:
+  - lint
+  - test
+
+before_script: npm install
+
+linter:
+  stage: lint
+  only:
+    refs:
+      - main
+  script:
+    - npm run lint
+test:
+  stage: test
+  only:
+    refs:
+      - main
+  script:
+    - npm test
+

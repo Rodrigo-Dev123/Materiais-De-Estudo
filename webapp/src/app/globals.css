@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-2xl;
+  }
+  h2 {
+    @apply text-xl;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply mx-auto block max-w-max rounded-[10px] bg-primaryColor px-5 py-2 font-semibold hover:bg-primaryColor/70
+  }
+  .btn-secondary {
+    @apply mx-auto block max-w-max rounded-[10px] bg-secondaryColor px-5 py-2 font-semibold hover:bg-secondaryColor/70
+  }
+  .btn-tertiary {
+    @apply mx-auto block max-w-max rounded-[10px] bg-tertiaryColor px-5 py-2 font-semibold text-emerald-700 hover:bg-tertiaryColor/70
+  }
+}
+
+@layer utilities {
+  .filter-none {
+    filter: none;
+  }
+  .filter-grayscale {
+    filter: grayscale(100%);
+  }
+}

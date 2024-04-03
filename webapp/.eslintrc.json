@@ -1,0 +1,9 @@
+{
+  "extends": ["eslint:recommended", "next", "prettier"],
+  "plugins": ["jest"],
+  "ignorePatterns": ["cypress.config.ts", "cypress"],
+  "rules": {
+    "@next/next/no-page-custom-font": "off",
+    "no-var": "error"
+  }
+}
