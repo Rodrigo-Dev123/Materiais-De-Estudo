@@ -1,3 +1,4 @@
+"use client"
 function ShowCase() {
   return (
     <div className='flex h-max flex-col'>
