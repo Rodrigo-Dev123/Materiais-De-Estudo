@@ -13,3 +13,5 @@ const pessoa = {
 
 semRetorno('Rodrigo', 'Ramos');
 pessoa.exibirNome();
+
+export { pessoa };

@@ -24,4 +24,5 @@ export function squareOf(x: any) {
 const squareOfTwoNumber = squareOf(2);
 const squareOfTwoString = squareOf('2');
 
-if (typeof squareOfTwoNumber)
+if (typeof squareOfTwoNumber === 'number') console.log('');
+if (typeof squareOfTwoString === 'string') console.log('');

@@ -16,4 +16,4 @@ function escolhaAcor(cor: Cores): void {
   console.log(Cores[cor]);
 }
 
-escolhaAcor(1234567);
+// escolhaAcor(1234567);

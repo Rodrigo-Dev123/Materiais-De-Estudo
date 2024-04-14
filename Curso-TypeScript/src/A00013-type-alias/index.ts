@@ -19,4 +19,4 @@ export function setCorPreferida(pessoa: Pessoa, cor: corPreferida): Pessoa {
   return { ...pessoa, corPreferida: cor };
 }
 
-console.log(pessoa, 'Azul');
+console.log(setCorPreferida(pessoa, 'Azul'));
