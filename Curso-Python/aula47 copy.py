@@ -11,13 +11,14 @@ while True:
     if letras_digitada in palavra_secreta:
         letras_acertadas += letras_digitada
 
+    palavra_formada = ''
     for letra_secreta in palavra_secreta:
         if letra_secreta in letras_acertadas:
-            print(letra_secreta)
+            palavra_formada += letra_secreta
         else:
             print('*')
 
     if letras_acertadas == palavra_secreta:
         print('Você acertou!!!')
         break
-    print(letras_acertadas)
+    print(palavra_formada)

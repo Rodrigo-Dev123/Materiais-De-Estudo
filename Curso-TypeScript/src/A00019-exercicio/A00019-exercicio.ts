@@ -1,4 +1,2 @@
-import './form-control';
-import funcao from './mod';
-
-funcao();
+import '../A0035exercicio-video/A0035exercicio-video';
+// import './form-control';
