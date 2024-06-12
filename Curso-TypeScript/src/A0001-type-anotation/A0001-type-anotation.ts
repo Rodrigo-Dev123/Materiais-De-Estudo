@@ -13,7 +13,7 @@ let arrayDeStrings: Array<string> = ['a', 'b', 'c'];
 // let arrayDeStrings: string[] = ['a', 'b', 'c'];
 
 // objetos
-let pessoa: {nome: string, idade: number, adulto?: boolean} = { // A interrogação depois da chave significa que o valor é opcional.
+export let pessoa: {nome: string, idade: number, adulto?: boolean} = { // A interrogação depois da chave significa que o valor é opcional.
   idade: 30,
   nome: 'Rodrigo',
 }
