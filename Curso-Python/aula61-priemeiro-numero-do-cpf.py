@@ -26,7 +26,7 @@ contrário disso:
 O primeiro dígito do CPF é 7
 """
 
-hard_cpf = '746.824.890-70'
+hard_cpf = '087.095.590-00'
 cpf = ''.join(re.findall(r'\d', hard_cpf))
 print(cpf)
 
@@ -39,7 +39,6 @@ for index in range(9):
 
 numeros_somados *= 10
 
-
-primeiro_digito =  0 if (numeros_somados % 11 == 7) > 9 else numeros_somados % 11
+primeiro_digito =  0 if (numeros_somados % 11) > 9 else numeros_somados % 11
 
 print(primeiro_digito)

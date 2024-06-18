@@ -1,5 +1,3 @@
-import { strict } from "assert";
-
 export class Calculadora {
   constructor(public numero: number) {}
 
