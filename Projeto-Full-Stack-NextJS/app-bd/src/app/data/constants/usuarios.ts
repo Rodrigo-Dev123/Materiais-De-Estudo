@@ -1,6 +1,6 @@
-import { Usuario } from "@/core/model/Usuário";
+import { User } from "@/core/model/Usuário";
 
-const usuarios: Usuario[] = [
+const Users: User[] = [
     {
         id: '1',
         email: 'ana@gmail.com',
@@ -38,3 +38,5 @@ const usuarios: Usuario[] = [
         senha: '123456',
     },
 ]
+
+export default Users;
