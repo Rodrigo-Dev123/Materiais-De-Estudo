@@ -2,12 +2,16 @@ import { User } from "@/core/model/Usuário"
 import Image from "next/image"
 
 export interface UserLineProps {
-    User: User
+    user: User
+    onClick?: (user: User) => void
 }
 
 export default function UserLine(props: UserLineProps) {
     return (
-        <div className="flex bg-zinc-900 items-center gap-5 p-4 rounded-md">
+        <div
+            className="flex bg-zinc-900 items-center gap-5 p-4 rounded-md"
+            onClick={() => props.onClick?.(props.user)}
+        >
             <Image
                 src="/example.jpg"
                 width={80}
@@ -16,8 +20,8 @@ export default function UserLine(props: UserLineProps) {
                 alt="Avatar"
             />
             <div className="flex flex-col">
-                <span className="text-xl font-black">{props.User.nome}</span>
-                <span className="text-sm text-zinc-400">{props.User.email}</span>
+                <span className="text-xl font-black">{props.user.nome}</span>
+                <span className="text-sm text-zinc-400">{props.user.email}</span>
             </div>
         </div>
     )
