@@ -1,20 +1,20 @@
 
 from django.shortcuts import render
-
+from blog.data import posts
 
 def blog(request):
+    
     print('blog')
 
     context = {
         'text': 'Estamos no Blog',
-        'title': 'Esta é uma página de exemplo'
+        'posts': posts
     }
     return render(
         request,
         'blog/index.html',
         context
     )
-
 
 def exemplo(request):
     print('exemplo')
