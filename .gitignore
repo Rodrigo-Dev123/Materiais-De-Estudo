@@ -10,3 +10,6 @@ venv/
 mysql-volume
 
 mysql_data
+
+aula207_ola_django/static_files
+static_files
