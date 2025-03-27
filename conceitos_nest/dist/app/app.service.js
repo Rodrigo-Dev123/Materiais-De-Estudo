@@ -12,6 +12,9 @@ let AppService = class AppService {
     getHello() {
         return 'Hello World!';
     }
+    solucionaExemplo() {
+        return 'Exemplo usa o service.';
+    }
 };
 exports.AppService = AppService;
 exports.AppService = AppService = __decorate([

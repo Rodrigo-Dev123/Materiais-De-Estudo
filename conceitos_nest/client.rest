@@ -1,0 +1,32 @@
+@baseUrl = http://localhost:3000
+
+### Recados
+GET {{baseUrl}}/recados/
+
+###
+GET {{baseUrl}}/recados/1/
+
+### Cria recado
+POST {{baseUrl}}/recados/
+Content-Type: application/json
+
+{
+    "recado": "Este é o recado que estou enviando.",
+    "nova chave": "outro valor"
+}
+
+### AppControllerGetHello
+# @name AppControllerGetHello
+GET {{baseUrl}}/home/
+
+### Exemplo de rota
+# @name AppControllerGetExemplo
+GET {{baseUrl}}/home/exemplo
+
+### AppControllerGetExemplo
+# @name AppControllerGetExemplo
+GET {{baseUrl}}/conceitos-manual/
+
+### ConceitosAutomaticoController
+# @name ConceitosAutomaticoController
+GET {{baseUrl}}/conceitos-automatico/

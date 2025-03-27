@@ -6,12 +6,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.ConceitosManualModule = void 0;
+exports.RecadosModule = void 0;
 const common_1 = require("@nestjs/common");
-let ConceitosManualModule = class ConceitosManualModule {
+const recados_controller_1 = require("./recados.controller");
+let RecadosModule = class RecadosModule {
 };
-exports.ConceitosManualModule = ConceitosManualModule;
-exports.ConceitosManualModule = ConceitosManualModule = __decorate([
-    (0, common_1.Module)({})
-], ConceitosManualModule);
-//# sourceMappingURL=conceitos-manual.module.js.map
+exports.RecadosModule = RecadosModule;
+exports.RecadosModule = RecadosModule = __decorate([
+    (0, common_1.Module)({
+        controllers: [recados_controller_1.RecadosController]
+    })
+], RecadosModule);
+//# sourceMappingURL=recados.module.js.map
