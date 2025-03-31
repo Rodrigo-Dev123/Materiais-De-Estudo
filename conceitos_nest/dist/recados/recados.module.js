@@ -14,7 +14,7 @@ let RecadosModule = class RecadosModule {
 exports.RecadosModule = RecadosModule;
 exports.RecadosModule = RecadosModule = __decorate([
     (0, common_1.Module)({
-        controllers: [recados_controller_1.RecadosController]
+        controllers: [recados_controller_1.RecadosController],
     })
 ], RecadosModule);
 //# sourceMappingURL=recados.module.js.map

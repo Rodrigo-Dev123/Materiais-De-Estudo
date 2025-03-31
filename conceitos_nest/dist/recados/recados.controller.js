@@ -15,8 +15,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.RecadosController = void 0;
 const common_1 = require("@nestjs/common");
 let RecadosController = class RecadosController {
-    findAll() {
-        return 'Encontrar todos os recados';
+    findAll(pagination) {
+        const { limit = 10, offset = 0 } = pagination;
+        return `Encontrar todos os recados Limit ${limit} e Offset ${offset}`;
     }
     findOne(id) {
         console.log(id);
@@ -26,12 +27,23 @@ let RecadosController = class RecadosController {
         console.log(body);
         return body;
     }
+    update(id, body) {
+        return {
+            id,
+            ...body,
+        };
+    }
+    remove(id) {
+        return `Essa rota apaga o recado ${id}`;
+    }
 };
 exports.RecadosController = RecadosController;
 __decorate([
+    (0, common_1.HttpCode)(common_1.HttpStatus.OK),
     (0, common_1.Get)(),
+    __param(0, (0, common_1.Query)()),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", []),
+    __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", void 0)
 ], RecadosController.prototype, "findAll", null);
 __decorate([
@@ -48,6 +60,21 @@ __decorate([
     __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", void 0)
 ], RecadosController.prototype, "create", null);
+__decorate([
+    (0, common_1.Patch)(':id'),
+    __param(0, (0, common_1.Param)('id')),
+    __param(1, (0, common_1.Body)()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [String, Object]),
+    __metadata("design:returntype", void 0)
+], RecadosController.prototype, "update", null);
+__decorate([
+    (0, common_1.Delete)(':id'),
+    __param(0, (0, common_1.Param)('id')),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [String]),
+    __metadata("design:returntype", void 0)
+], RecadosController.prototype, "remove", null);
 exports.RecadosController = RecadosController = __decorate([
     (0, common_1.Controller)('recados')
 ], RecadosController);
