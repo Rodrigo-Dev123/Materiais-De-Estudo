@@ -15,5 +15,5 @@ export declare class RecadosController {
         id: number;
     };
     update(id: string, updateRecadoDto: UpdateRecadoDto): import("./entities/recado.entity").Recado;
-    remove(id: string): import("./entities/recado.entity").Recado;
+    remove(id: number): import("./entities/recado.entity").Recado;
 }

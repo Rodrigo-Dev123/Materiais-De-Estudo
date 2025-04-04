@@ -16,5 +16,5 @@ export declare class RecadosService {
         id: number;
     };
     update(id: string, updateRecadoDto: UpdateRecadoDto): Recado;
-    remove(id: string): Recado;
+    remove(id: number): Recado;
 }

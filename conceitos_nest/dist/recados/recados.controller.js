@@ -27,6 +27,7 @@ let RecadosController = class RecadosController {
         return this.recadosService.findAll();
     }
     findOne(id) {
+        console.log(typeof id);
         return this.recadosService.findOne(id);
     }
     create(createRecadoDto) {
@@ -50,7 +51,7 @@ __decorate([
 ], RecadosController.prototype, "findAll", null);
 __decorate([
     (0, common_1.Get)(':id'),
-    __param(0, (0, common_1.Param)('id')),
+    __param(0, (0, common_1.Param)('id', common_1.ParseIntPipe)),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Number]),
     __metadata("design:returntype", void 0)
@@ -72,9 +73,9 @@ __decorate([
 ], RecadosController.prototype, "update", null);
 __decorate([
     (0, common_1.Delete)(':id'),
-    __param(0, (0, common_1.Param)('id')),
+    __param(0, (0, common_1.Param)('id', common_1.ParseIntPipe)),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [String]),
+    __metadata("design:paramtypes", [Number]),
     __metadata("design:returntype", void 0)
 ], RecadosController.prototype, "remove", null);
 exports.RecadosController = RecadosController = __decorate([
