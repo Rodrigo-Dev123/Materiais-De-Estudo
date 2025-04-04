@@ -10,43 +10,42 @@ import {
   Post,
   Query,
 } from '@nestjs/common';
+import { RecadosService } from './recados.service';
+import { CreateRecadoTdo } from './dto/create-recado.tdo';
+import { UpdateRecadoDto } from './dto/update-recado.tdo';
+
+// DTO - Data Transfer Object
+// DTO -> Objeto simples -> Validar dados / Transformar dados
 
 @Controller('recados')
 export class RecadosController {
-  // Encontrar todos os recados
+  constructor(private readonly recadosService: RecadosService) {}
 
+  // Encontrar todos os recados
   @HttpCode(HttpStatus.OK)
   @Get()
   findAll(@Query() pagination: any) {
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
     const { limit = 10, offset = 0 } = pagination;
-    return `Encontrar todos os recados Limit ${limit} e Offset ${offset}`;
+    return this.recadosService.findAll();
   }
 
   @Get(':id')
-  findOne(@Param('id') id: any) {
-    console.log(id);
-    return `Essa rota retorna um recado ${id}`;
+  findOne(@Param('id') id: number) {
+    return this.recadosService.findOne(id);
   }
 
   @Post()
-  create(@Body() body: any) {
-    console.log(body);
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-return
-    return body;
+  create(@Body() createRecadoDto: CreateRecadoTdo) {
+    return this.recadosService.create(createRecadoDto);
   }
 
   @Patch(':id')
-  update(@Param('id') id: string, @Body() body: any) {
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-return
-    return {
-      id,
-      ...body,
-    };
+  update(@Param('id') id: string, @Body() updateRecadoDto: UpdateRecadoDto) {
+    return this.recadosService.update(id, updateRecadoDto);
   }
 
   @Delete(':id')
   remove(@Param('id') id: string) {
-    return `Essa rota apaga o recado ${id}`;
+    return this.recadosService.remove(id);
   }
 }

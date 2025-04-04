@@ -14,27 +14,29 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.RecadosController = void 0;
 const common_1 = require("@nestjs/common");
+const recados_service_1 = require("./recados.service");
+const create_recado_tdo_1 = require("./dto/create-recado.tdo");
+const update_recado_tdo_1 = require("./dto/update-recado.tdo");
 let RecadosController = class RecadosController {
+    recadosService;
+    constructor(recadosService) {
+        this.recadosService = recadosService;
+    }
     findAll(pagination) {
         const { limit = 10, offset = 0 } = pagination;
-        return `Encontrar todos os recados Limit ${limit} e Offset ${offset}`;
+        return this.recadosService.findAll();
     }
     findOne(id) {
-        console.log(id);
-        return `Essa rota retorna um recado ${id}`;
+        return this.recadosService.findOne(id);
     }
-    create(body) {
-        console.log(body);
-        return body;
+    create(createRecadoDto) {
+        return this.recadosService.create(createRecadoDto);
     }
-    update(id, body) {
-        return {
-            id,
-            ...body,
-        };
+    update(id, updateRecadoDto) {
+        return this.recadosService.update(id, updateRecadoDto);
     }
     remove(id) {
-        return `Essa rota apaga o recado ${id}`;
+        return this.recadosService.remove(id);
     }
 };
 exports.RecadosController = RecadosController;
@@ -50,14 +52,14 @@ __decorate([
     (0, common_1.Get)(':id'),
     __param(0, (0, common_1.Param)('id')),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [Object]),
+    __metadata("design:paramtypes", [Number]),
     __metadata("design:returntype", void 0)
 ], RecadosController.prototype, "findOne", null);
 __decorate([
     (0, common_1.Post)(),
     __param(0, (0, common_1.Body)()),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [Object]),
+    __metadata("design:paramtypes", [create_recado_tdo_1.CreateRecadoTdo]),
     __metadata("design:returntype", void 0)
 ], RecadosController.prototype, "create", null);
 __decorate([
@@ -65,7 +67,7 @@ __decorate([
     __param(0, (0, common_1.Param)('id')),
     __param(1, (0, common_1.Body)()),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [String, Object]),
+    __metadata("design:paramtypes", [String, update_recado_tdo_1.UpdateRecadoDto]),
     __metadata("design:returntype", void 0)
 ], RecadosController.prototype, "update", null);
 __decorate([
@@ -76,6 +78,7 @@ __decorate([
     __metadata("design:returntype", void 0)
 ], RecadosController.prototype, "remove", null);
 exports.RecadosController = RecadosController = __decorate([
-    (0, common_1.Controller)('recados')
+    (0, common_1.Controller)('recados'),
+    __metadata("design:paramtypes", [recados_service_1.RecadosService])
 ], RecadosController);
 //# sourceMappingURL=recados.controller.js.map

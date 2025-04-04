@@ -9,12 +9,14 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.RecadosModule = void 0;
 const common_1 = require("@nestjs/common");
 const recados_controller_1 = require("./recados.controller");
+const recados_service_1 = require("./recados.service");
 let RecadosModule = class RecadosModule {
 };
 exports.RecadosModule = RecadosModule;
 exports.RecadosModule = RecadosModule = __decorate([
     (0, common_1.Module)({
         controllers: [recados_controller_1.RecadosController],
+        providers: [recados_service_1.RecadosService],
     })
 ], RecadosModule);
 //# sourceMappingURL=recados.module.js.map
