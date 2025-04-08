@@ -5,4 +5,6 @@ export declare class Recado {
     para: string;
     lido: boolean;
     data: Date;
+    createdAt?: Date;
+    updatedAt?: Date;
 }

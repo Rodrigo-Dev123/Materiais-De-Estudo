@@ -10,11 +10,14 @@ exports.RecadosModule = void 0;
 const common_1 = require("@nestjs/common");
 const recados_controller_1 = require("./recados.controller");
 const recados_service_1 = require("./recados.service");
+const typeorm_1 = require("@nestjs/typeorm");
+const recado_entity_1 = require("./entities/recado.entity");
 let RecadosModule = class RecadosModule {
 };
 exports.RecadosModule = RecadosModule;
 exports.RecadosModule = RecadosModule = __decorate([
     (0, common_1.Module)({
+        imports: [typeorm_1.TypeOrmModule.forFeature([recado_entity_1.Recado])],
         controllers: [recados_controller_1.RecadosController],
         providers: [recados_service_1.RecadosService],
     })
