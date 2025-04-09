@@ -9,33 +9,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.CreateRecadoTdo = void 0;
+exports.CreateRecadoDto = void 0;
 const class_validator_1 = require("class-validator");
-class CreateRecadoTdo {
+class CreateRecadoDto {
     texto;
-    de;
-    para;
 }
-exports.CreateRecadoTdo = CreateRecadoTdo;
+exports.CreateRecadoDto = CreateRecadoDto;
 __decorate([
     (0, class_validator_1.IsString)(),
     (0, class_validator_1.IsNotEmpty)(),
     (0, class_validator_1.MinLength)(5),
     (0, class_validator_1.MaxLength)(255),
     __metadata("design:type", String)
-], CreateRecadoTdo.prototype, "texto", void 0);
-__decorate([
-    (0, class_validator_1.IsString)(),
-    (0, class_validator_1.IsNotEmpty)(),
-    (0, class_validator_1.MinLength)(2),
-    (0, class_validator_1.MaxLength)(50),
-    __metadata("design:type", String)
-], CreateRecadoTdo.prototype, "de", void 0);
-__decorate([
-    (0, class_validator_1.IsString)(),
-    (0, class_validator_1.IsNotEmpty)(),
-    (0, class_validator_1.MinLength)(2),
-    (0, class_validator_1.MaxLength)(50),
-    __metadata("design:type", String)
-], CreateRecadoTdo.prototype, "para", void 0);
+], CreateRecadoDto.prototype, "texto", void 0);
 //# sourceMappingURL=create-recado.tdo.js.map

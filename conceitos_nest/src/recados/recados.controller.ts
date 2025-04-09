@@ -12,7 +12,7 @@ import {
   Query,
 } from '@nestjs/common';
 import { RecadosService } from './recados.service';
-import { CreateRecadoTdo } from './dto/create-recado.tdo';
+import { CreateRecadoDto } from './dto/create-recado.tdo';
 import { UpdateRecadoDto } from './dto/update-recado.tdo';
 
 // DTO - Data Transfer Object
@@ -37,12 +37,16 @@ export class RecadosController {
   }
 
   @Post()
-  create(@Body() createRecadoDto: CreateRecadoTdo) {
+  create(@Body() createRecadoDto: CreateRecadoDto) {
+    console.log(createRecadoDto);
     return this.recadosService.create(createRecadoDto);
   }
 
   @Patch(':id')
-  update(@Param('id') id: string, @Body() updateRecadoDto: UpdateRecadoDto) {
+  update(
+    @Param('id', ParseIntPipe) id: number,
+    @Body() updateRecadoDto: UpdateRecadoDto,
+  ) {
     return this.recadosService.update(id, updateRecadoDto);
   }
 

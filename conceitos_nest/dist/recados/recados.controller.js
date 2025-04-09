@@ -31,6 +31,7 @@ let RecadosController = class RecadosController {
         return this.recadosService.findOne(id);
     }
     create(createRecadoDto) {
+        console.log(createRecadoDto);
         return this.recadosService.create(createRecadoDto);
     }
     update(id, updateRecadoDto) {
@@ -60,15 +61,15 @@ __decorate([
     (0, common_1.Post)(),
     __param(0, (0, common_1.Body)()),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [create_recado_tdo_1.CreateRecadoTdo]),
+    __metadata("design:paramtypes", [create_recado_tdo_1.CreateRecadoDto]),
     __metadata("design:returntype", void 0)
 ], RecadosController.prototype, "create", null);
 __decorate([
     (0, common_1.Patch)(':id'),
-    __param(0, (0, common_1.Param)('id')),
+    __param(0, (0, common_1.Param)('id', common_1.ParseIntPipe)),
     __param(1, (0, common_1.Body)()),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [String, update_recado_tdo_1.UpdateRecadoDto]),
+    __metadata("design:paramtypes", [Number, update_recado_tdo_1.UpdateRecadoDto]),
     __metadata("design:returntype", void 0)
 ], RecadosController.prototype, "update", null);
 __decorate([

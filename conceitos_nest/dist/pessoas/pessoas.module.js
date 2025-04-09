@@ -6,21 +6,21 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.RecadosModule = void 0;
+exports.PessoasModule = void 0;
 const common_1 = require("@nestjs/common");
-const recados_controller_1 = require("./recados.controller");
-const recados_service_1 = require("./recados.service");
+const pessoas_service_1 = require("./pessoas.service");
+const pessoas_controller_1 = require("./pessoas.controller");
 const typeorm_1 = require("@nestjs/typeorm");
-const recado_entity_1 = require("./entities/recado.entity");
-const pessoas_module_1 = require("../pessoas/pessoas.module");
-let RecadosModule = class RecadosModule {
+const pessoa_entity_1 = require("./entities/pessoa.entity");
+let PessoasModule = class PessoasModule {
 };
-exports.RecadosModule = RecadosModule;
-exports.RecadosModule = RecadosModule = __decorate([
+exports.PessoasModule = PessoasModule;
+exports.PessoasModule = PessoasModule = __decorate([
     (0, common_1.Module)({
-        imports: [typeorm_1.TypeOrmModule.forFeature([recado_entity_1.Recado]), pessoas_module_1.PessoasModule],
-        controllers: [recados_controller_1.RecadosController],
-        providers: [recados_service_1.RecadosService],
+        imports: [typeorm_1.TypeOrmModule.forFeature([pessoa_entity_1.Pessoa])],
+        controllers: [pessoas_controller_1.PessoasController],
+        providers: [pessoas_service_1.PessoasService],
+        exports: [pessoas_service_1.PessoasService],
     })
-], RecadosModule);
-//# sourceMappingURL=recados.module.js.map
+], PessoasModule);
+//# sourceMappingURL=pessoas.module.js.map

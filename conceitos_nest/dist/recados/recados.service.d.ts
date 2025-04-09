@@ -1,20 +1,16 @@
 import { Recado } from './entities/recado.entity';
-import { CreateRecadoTdo } from './dto/create-recado.tdo';
+import { CreateRecadoDto } from './dto/create-recado.tdo';
 import { UpdateRecadoDto } from './dto/update-recado.tdo';
+import { Repository } from 'typeorm';
+import { PessoasService } from 'src/pessoas/pessoas.service';
 export declare class RecadosService {
-    private lastId;
-    private recados;
+    private readonly recadoRepository;
+    private readonly pessoasService;
+    constructor(recadoRepository: Repository<Recado>, pessoasService: PessoasService);
     throwNotFoundError(): void;
-    findAll(): Recado[];
-    findOne(id: number): Recado | undefined;
-    create(createRecadoDto: CreateRecadoTdo): {
-        lido: boolean;
-        data: Date;
-        texto: string;
-        de: string;
-        para: string;
-        id: number;
-    };
-    update(id: string, updateRecadoDto: UpdateRecadoDto): Recado;
-    remove(id: number): Recado;
+    findAll(): Promise<Recado[]>;
+    findOne(id: number): Promise<Recado | undefined>;
+    create(createRecadoDto: CreateRecadoDto): Promise<Recado>;
+    update(id: number, updateRecadoDto: UpdateRecadoDto): Promise<void | Recado>;
+    remove(id: number): Promise<void | Recado>;
 }

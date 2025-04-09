@@ -9,55 +9,55 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Recado = void 0;
-const pessoa_entity_1 = require("../../pessoas/entities/pessoa.entity");
+exports.Pessoa = void 0;
+const class_validator_1 = require("class-validator");
+const recado_entity_1 = require("../../recados/entities/recado.entity");
 const typeorm_1 = require("typeorm");
-let Recado = class Recado {
+let Pessoa = class Pessoa {
     id;
-    texto;
-    lido;
-    data;
+    email;
+    passwordHash;
+    nome;
     createdAt;
     updatedAt;
-    de;
-    para;
+    recadosEnviados;
+    recadosRecebidos;
 };
-exports.Recado = Recado;
+exports.Pessoa = Pessoa;
 __decorate([
     (0, typeorm_1.PrimaryGeneratedColumn)(),
     __metadata("design:type", Number)
-], Recado.prototype, "id", void 0);
+], Pessoa.prototype, "id", void 0);
 __decorate([
-    (0, typeorm_1.Column)({ type: 'varchar', length: 255 }),
+    (0, typeorm_1.Column)({ unique: true }),
+    (0, class_validator_1.IsEmail)(),
     __metadata("design:type", String)
-], Recado.prototype, "texto", void 0);
+], Pessoa.prototype, "email", void 0);
 __decorate([
-    (0, typeorm_1.Column)({ default: false }),
-    __metadata("design:type", Boolean)
-], Recado.prototype, "lido", void 0);
+    (0, typeorm_1.Column)({ length: 255 }),
+    __metadata("design:type", String)
+], Pessoa.prototype, "passwordHash", void 0);
 __decorate([
-    (0, typeorm_1.Column)(),
-    __metadata("design:type", Date)
-], Recado.prototype, "data", void 0);
+    (0, typeorm_1.Column)({ length: 100 }),
+    __metadata("design:type", String)
+], Pessoa.prototype, "nome", void 0);
 __decorate([
     (0, typeorm_1.CreateDateColumn)(),
     __metadata("design:type", Date)
-], Recado.prototype, "createdAt", void 0);
+], Pessoa.prototype, "createdAt", void 0);
 __decorate([
     (0, typeorm_1.UpdateDateColumn)(),
     __metadata("design:type", Date)
-], Recado.prototype, "updatedAt", void 0);
+], Pessoa.prototype, "updatedAt", void 0);
 __decorate([
-    (0, typeorm_1.ManyToOne)(() => pessoa_entity_1.Pessoa),
-    (0, typeorm_1.JoinColumn)({ name: 'de' }),
-    __metadata("design:type", pessoa_entity_1.Pessoa)
-], Recado.prototype, "de", void 0);
+    (0, typeorm_1.OneToMany)(() => recado_entity_1.Recado, recado => recado.de),
+    __metadata("design:type", Array)
+], Pessoa.prototype, "recadosEnviados", void 0);
 __decorate([
-    (0, typeorm_1.ManyToOne)(() => pessoa_entity_1.Pessoa),
-    (0, typeorm_1.JoinColumn)({ name: 'para' }),
-    __metadata("design:type", pessoa_entity_1.Pessoa)
-], Recado.prototype, "para", void 0);
-exports.Recado = Recado = __decorate([
+    (0, typeorm_1.OneToMany)(() => recado_entity_1.Recado, recado => recado.para),
+    __metadata("design:type", Array)
+], Pessoa.prototype, "recadosRecebidos", void 0);
+exports.Pessoa = Pessoa = __decorate([
     (0, typeorm_1.Entity)()
-], Recado);
-//# sourceMappingURL=recado.entity.js.map
+], Pessoa);
+//# sourceMappingURL=pessoa.entity.js.map

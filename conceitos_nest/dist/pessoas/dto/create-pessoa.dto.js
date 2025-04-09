@@ -9,17 +9,29 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.UpdateRecadoDto = void 0;
-const mapped_types_1 = require("@nestjs/mapped-types");
-const create_recado_tdo_1 = require("./create-recado.tdo");
+exports.CreatePessoaDto = void 0;
 const class_validator_1 = require("class-validator");
-class UpdateRecadoDto extends (0, mapped_types_1.PartialType)(create_recado_tdo_1.CreateRecadoDto) {
-    lido;
+class CreatePessoaDto {
+    email;
+    password;
+    nome;
 }
-exports.UpdateRecadoDto = UpdateRecadoDto;
+exports.CreatePessoaDto = CreatePessoaDto;
 __decorate([
-    (0, class_validator_1.IsBoolean)(),
-    (0, class_validator_1.IsOptional)(),
-    __metadata("design:type", Boolean)
-], UpdateRecadoDto.prototype, "lido", void 0);
-//# sourceMappingURL=update-recado.tdo.js.map
+    (0, class_validator_1.IsEmail)(),
+    __metadata("design:type", String)
+], CreatePessoaDto.prototype, "email", void 0);
+__decorate([
+    (0, class_validator_1.IsString)(),
+    (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.MinLength)(5),
+    __metadata("design:type", String)
+], CreatePessoaDto.prototype, "password", void 0);
+__decorate([
+    (0, class_validator_1.IsString)(),
+    (0, class_validator_1.IsNotEmpty)(),
+    (0, class_validator_1.MinLength)(3),
+    (0, class_validator_1.MaxLength)(100),
+    __metadata("design:type", String)
+], CreatePessoaDto.prototype, "nome", void 0);
+//# sourceMappingURL=create-pessoa.dto.js.map

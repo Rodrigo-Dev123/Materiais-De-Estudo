@@ -5,71 +5,75 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __param = (this && this.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.RecadosService = void 0;
 const common_1 = require("@nestjs/common");
+const recado_entity_1 = require("./entities/recado.entity");
+const typeorm_1 = require("@nestjs/typeorm");
+const typeorm_2 = require("typeorm");
+const pessoas_service_1 = require("../pessoas/pessoas.service");
 let RecadosService = class RecadosService {
-    lastId = 1;
-    recados = [
-        {
-            id: 1,
-            texto: 'Este é um recado de teste',
-            de: 'Fulano',
-            para: 'Ciclano',
-            lido: false,
-            data: new Date(),
-        },
-    ];
+    recadoRepository;
+    pessoasService;
+    constructor(recadoRepository, pessoasService) {
+        this.recadoRepository = recadoRepository;
+        this.pessoasService = pessoasService;
+    }
     throwNotFoundError() {
         throw new common_1.NotFoundException('Recado nao encontrado');
     }
-    findAll() {
-        return this.recados;
+    async findAll() {
+        const recados = await this.recadoRepository.find();
+        return recados;
     }
-    findOne(id) {
-        const recado = this.recados.find(recado => recado.id === Number(id));
+    async findOne(id) {
+        const recado = await this.recadoRepository.findOne({
+            where: { id },
+        });
         if (recado)
             return recado;
         this.throwNotFoundError();
     }
-    create(createRecadoDto) {
-        this.lastId++;
-        const id = this.lastId;
+    async create(createRecadoDto) {
         const newRecado = {
-            id,
             ...createRecadoDto,
             lido: false,
             data: new Date(),
         };
-        this.recados.push(newRecado);
-        return newRecado;
+        const recado = this.recadoRepository.create(newRecado);
+        return await this.recadoRepository.save(recado);
     }
-    update(id, updateRecadoDto) {
-        const recadoExistenteIndex = this.recados.findIndex(recado => recado.id === Number(id));
-        if (recadoExistenteIndex < 0) {
-            this.throwNotFoundError();
-        }
-        if (recadoExistenteIndex >= 0) {
-            const recadoExistente = this.recados[recadoExistenteIndex];
-            this.recados[recadoExistenteIndex] = {
-                ...recadoExistente,
-                ...updateRecadoDto,
-            };
-        }
-        return this.recados[recadoExistenteIndex];
+    async update(id, updateRecadoDto) {
+        const partialUpdateRecadoDto = {
+            lido: updateRecadoDto.lido,
+            texto: updateRecadoDto.texto,
+        };
+        const recado = await this.recadoRepository.preload({
+            id,
+            ...partialUpdateRecadoDto,
+        });
+        if (!recado)
+            return this.throwNotFoundError();
+        return await this.recadoRepository.save(recado);
     }
-    remove(id) {
-        const recadoExistenteIndex = this.recados.findIndex(recado => recado.id === Number(id));
-        if (recadoExistenteIndex < 0) {
-            this.throwNotFoundError();
-        }
-        const recado = this.recados[recadoExistenteIndex];
-        this.recados.splice(recadoExistenteIndex, 1);
-        return recado;
+    async remove(id) {
+        const recado = await this.recadoRepository.findOneBy({ id });
+        if (!recado)
+            return this.throwNotFoundError();
+        return this.recadoRepository.remove(recado);
     }
 };
 exports.RecadosService = RecadosService;
 exports.RecadosService = RecadosService = __decorate([
-    (0, common_1.Injectable)()
+    (0, common_1.Injectable)(),
+    __param(0, (0, typeorm_1.InjectRepository)(recado_entity_1.Recado)),
+    __metadata("design:paramtypes", [typeorm_2.Repository,
+        pessoas_service_1.PessoasService])
 ], RecadosService);
 //# sourceMappingURL=recados.service.js.map

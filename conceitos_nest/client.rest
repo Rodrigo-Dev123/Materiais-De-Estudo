@@ -5,8 +5,8 @@ GET {{baseUrl}}/recados/
 ?limit=100
 &offset=100
 
-###
-GET {{baseUrl}}/recados/2/
+### Lista um recado
+GET {{baseUrl}}/recados/1/
 
 ### Cria recado
 POST {{baseUrl}}/recados/
@@ -15,22 +15,58 @@ Content-Type: application/json
 {
     "texto": "Novo recado",
     "de": "Fulano",
-    "para": "Ciclano",
-    // "bla bla": "bla bla"
+    "para": "Ciclano"
 }
 
 ### Atualiza um recado
-PATCH  {{baseUrl}}/recados/1
+PATCH  {{baseUrl}}/recados/4
 Content-Type: application/json
 
 {
     "texto": "eafgzdgsdfgsdfg",
-    "de": "Fulano",
-    "para": "Ciclano"
+    "lido": true
 }
 
 ### Apaga um recado
-DELETE  {{baseUrl}}/recados/1/
+DELETE  {{baseUrl}}/recados/3/
+
+
+
+
+
+### Pessoas
+GET {{baseUrl}}/pessoas/
+?limit=100
+&offset=100
+
+### Lista uma pessoa
+GET {{baseUrl}}/pessoas/1/
+
+### Cria Pessoa
+POST {{baseUrl}}/pessoas/
+Content-Type: application/json
+
+{
+    "email": "email2@gmail.com",
+    "password": "123456",
+    "nome": "Rodrigo"
+}
+
+### Atualiza uma Pessoa
+PATCH  {{baseUrl}}/pessoas/4
+Content-Type: application/json
+
+{
+    "password": "1234567",
+    "nome": "Rodrigo"
+}
+
+### Apaga uma Pessoa
+DELETE  {{baseUrl}}/pessoas/12/
+
+
+
+
 
 ### AppControllerGetHello
 # @name AppControllerGetHello

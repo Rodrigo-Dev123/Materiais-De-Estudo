@@ -1,4 +1,9 @@
 import { PartialType } from '@nestjs/mapped-types';
-import { CreateRecadoTdo } from './create-recado.tdo';
+import { CreateRecadoDto } from './create-recado.tdo';
+import { IsBoolean, IsOptional } from 'class-validator';
 
-export class UpdateRecadoDto extends PartialType(CreateRecadoTdo) {}
+export class UpdateRecadoDto extends PartialType(CreateRecadoDto) {
+  @IsBoolean()
+  @IsOptional()
+  readonly lido?: boolean;
+}
