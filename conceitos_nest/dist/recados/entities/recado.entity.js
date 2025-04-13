@@ -48,12 +48,12 @@ __decorate([
     __metadata("design:type", Date)
 ], Recado.prototype, "updatedAt", void 0);
 __decorate([
-    (0, typeorm_1.ManyToOne)(() => pessoa_entity_1.Pessoa),
+    (0, typeorm_1.ManyToOne)(() => pessoa_entity_1.Pessoa, { onDelete: 'CASCADE', onUpdate: 'CASCADE' }),
     (0, typeorm_1.JoinColumn)({ name: 'de' }),
     __metadata("design:type", pessoa_entity_1.Pessoa)
 ], Recado.prototype, "de", void 0);
 __decorate([
-    (0, typeorm_1.ManyToOne)(() => pessoa_entity_1.Pessoa),
+    (0, typeorm_1.ManyToOne)(() => pessoa_entity_1.Pessoa, { onDelete: 'CASCADE', onUpdate: 'CASCADE' }),
     (0, typeorm_1.JoinColumn)({ name: 'para' }),
     __metadata("design:type", pessoa_entity_1.Pessoa)
 ], Recado.prototype, "para", void 0);

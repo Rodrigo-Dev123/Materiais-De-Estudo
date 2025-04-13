@@ -46,8 +46,12 @@ let PessoasService = class PessoasService {
         });
         return pessoas;
     }
-    findOne(id) {
-        return `This action returns a #${id} pessoa`;
+    async findOne(id) {
+        const pessoa = await this.pessoaRepository.findOneBy({ id });
+        if (!pessoa) {
+            throw new common_1.NotFoundException('Pessoa não encontrada');
+        }
+        return pessoa;
     }
     async update(id, updatePessoaDto) {
         const dadosPessoa = {

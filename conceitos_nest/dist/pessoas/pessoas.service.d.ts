@@ -7,7 +7,7 @@ export declare class PessoasService {
     constructor(pessoaRepository: Repository<Pessoa>);
     create(createPessoaDto: CreatePessoaDto): Promise<Pessoa | undefined>;
     findAll(): Promise<Pessoa[]>;
-    findOne(id: number): string;
+    findOne(id: number): Promise<Pessoa>;
     update(id: number, updatePessoaDto: UpdatePessoaDto): Promise<Pessoa>;
     remove(id: number): Promise<Pessoa>;
 }

@@ -15,16 +15,16 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.RecadosController = void 0;
 const common_1 = require("@nestjs/common");
 const recados_service_1 = require("./recados.service");
-const create_recado_tdo_1 = require("./dto/create-recado.tdo");
-const update_recado_tdo_1 = require("./dto/update-recado.tdo");
+const create_recado_dto_1 = require("./dto/create-recado.dto");
+const update_recado_dto_1 = require("./dto/update-recado.dto");
+const pagination_dto_1 = require("../common/dto/pagination.dto");
 let RecadosController = class RecadosController {
     recadosService;
     constructor(recadosService) {
         this.recadosService = recadosService;
     }
-    findAll(pagination) {
-        const { limit = 10, offset = 0 } = pagination;
-        return this.recadosService.findAll();
+    findAll(paginationDto) {
+        return this.recadosService.findAll(paginationDto);
     }
     findOne(id) {
         console.log(typeof id);
@@ -47,7 +47,7 @@ __decorate([
     (0, common_1.Get)(),
     __param(0, (0, common_1.Query)()),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [Object]),
+    __metadata("design:paramtypes", [pagination_dto_1.PaginationDto]),
     __metadata("design:returntype", void 0)
 ], RecadosController.prototype, "findAll", null);
 __decorate([
@@ -61,7 +61,7 @@ __decorate([
     (0, common_1.Post)(),
     __param(0, (0, common_1.Body)()),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [create_recado_tdo_1.CreateRecadoDto]),
+    __metadata("design:paramtypes", [create_recado_dto_1.CreateRecadoDto]),
     __metadata("design:returntype", void 0)
 ], RecadosController.prototype, "create", null);
 __decorate([
@@ -69,7 +69,7 @@ __decorate([
     __param(0, (0, common_1.Param)('id', common_1.ParseIntPipe)),
     __param(1, (0, common_1.Body)()),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [Number, update_recado_tdo_1.UpdateRecadoDto]),
+    __metadata("design:paramtypes", [Number, update_recado_dto_1.UpdateRecadoDto]),
     __metadata("design:returntype", void 0)
 ], RecadosController.prototype, "update", null);
 __decorate([

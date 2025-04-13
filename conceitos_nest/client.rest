@@ -2,11 +2,11 @@
 
 ### Recados
 GET {{baseUrl}}/recados/
-?limit=100
-&offset=100
+?limit=50
+&offset=35
 
 ### Lista um recado
-GET {{baseUrl}}/recados/1/
+GET {{baseUrl}}/recados/20/
 
 ### Cria recado
 POST {{baseUrl}}/recados/
@@ -14,17 +14,17 @@ Content-Type: application/json
 
 {
     "texto": "Novo recado",
-    "de": "Fulano",
-    "para": "Ciclano"
+    "deId": 13,
+    "paraId": 4
 }
 
 ### Atualiza um recado
-PATCH  {{baseUrl}}/recados/4
+PATCH  {{baseUrl}}/recados/21
 Content-Type: application/json
 
 {
-    "texto": "eafgzdgsdfgsdfg",
-    "lido": true
+    "texto": "texto atualizado!",
+    "lido": false
 }
 
 ### Apaga um recado
@@ -62,7 +62,7 @@ Content-Type: application/json
 }
 
 ### Apaga uma Pessoa
-DELETE  {{baseUrl}}/pessoas/12/
+DELETE  {{baseUrl}}/pessoas/10/
 
 
 
