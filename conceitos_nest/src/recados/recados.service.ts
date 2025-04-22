@@ -16,7 +16,7 @@ export class RecadosService {
   ) {}
 
   throwNotFoundError() {
-    throw new NotFoundException('Recado nao encontrado');
+    throw new NotFoundException('Recado nao encontrado!');
   }
 
   async findAll(paginationDto: PaginationDto) {

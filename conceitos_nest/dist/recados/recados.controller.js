@@ -18,7 +18,6 @@ const recados_service_1 = require("./recados.service");
 const create_recado_dto_1 = require("./dto/create-recado.dto");
 const update_recado_dto_1 = require("./dto/update-recado.dto");
 const pagination_dto_1 = require("../common/dto/pagination.dto");
-const parse_int_id_pipe_1 = require("../common/pipes/parse-int-id.pipe");
 let RecadosController = class RecadosController {
     recadosService;
     constructor(recadosService) {
@@ -53,8 +52,7 @@ __decorate([
 ], RecadosController.prototype, "findAll", null);
 __decorate([
     (0, common_1.Get)(':id'),
-    (0, common_1.UsePipes)(parse_int_id_pipe_1.ParseIntIdPipe),
-    __param(0, (0, common_1.Param)('id', common_1.ParseIntPipe)),
+    __param(0, (0, common_1.Param)('id')),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Number]),
     __metadata("design:returntype", void 0)
@@ -68,7 +66,7 @@ __decorate([
 ], RecadosController.prototype, "create", null);
 __decorate([
     (0, common_1.Patch)(':id'),
-    __param(0, (0, common_1.Param)('id', common_1.ParseIntPipe)),
+    __param(0, (0, common_1.Param)('id')),
     __param(1, (0, common_1.Body)()),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Number, update_recado_dto_1.UpdateRecadoDto]),
@@ -76,7 +74,7 @@ __decorate([
 ], RecadosController.prototype, "update", null);
 __decorate([
     (0, common_1.Delete)(':id'),
-    __param(0, (0, common_1.Param)('id', common_1.ParseIntPipe)),
+    __param(0, (0, common_1.Param)('id')),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Number]),
     __metadata("design:returntype", void 0)

@@ -26,7 +26,7 @@ let RecadosService = class RecadosService {
         this.pessoasService = pessoasService;
     }
     throwNotFoundError() {
-        throw new common_1.NotFoundException('Recado nao encontrado');
+        throw new common_1.NotFoundException('Recado nao encontrado!');
     }
     async findAll(paginationDto) {
         const { limit = 10, offset = 0 } = paginationDto;

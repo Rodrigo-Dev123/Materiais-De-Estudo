@@ -3,10 +3,10 @@
 ### Recados
 GET {{baseUrl}}/recados/
 ?limit=50
-&offset=35
+// &offset=0
 
 ### Lista um recado
-GET {{baseUrl}}/recados/20/
+GET {{baseUrl}}/recados/7a/
 
 ### Cria recado
 POST {{baseUrl}}/recados/
@@ -14,12 +14,12 @@ Content-Type: application/json
 
 {
     "texto": "Novo recado",
-    "deId": 13,
-    "paraId": 4
+    "deId": 1,
+    "paraId": 1
 }
 
 ### Atualiza um recado
-PATCH  {{baseUrl}}/recados/21
+PATCH  {{baseUrl}}/recados/7
 Content-Type: application/json
 
 {
