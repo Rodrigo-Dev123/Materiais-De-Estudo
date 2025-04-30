@@ -3,10 +3,11 @@
 ### Recados
 GET {{baseUrl}}/recados/
 ?limit=50
-// &offset=0
+&offset=0
+Authorization: 'Bearer sdfdsfgsgwpodsfkgosdkgkdskfg'
 
 ### Lista um recado
-GET {{baseUrl}}/recados/7a/
+GET {{baseUrl}}/recados/58/
 
 ### Cria recado
 POST {{baseUrl}}/recados/
