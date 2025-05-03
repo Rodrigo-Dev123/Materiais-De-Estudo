@@ -4,7 +4,7 @@
 GET {{baseUrl}}/recados/
 ?limit=50
 &offset=0
-Authorization: 'Bearer sdfdsfgsgwpodsfkgosdkgkdskfg'
+Authorization: Bearer 123456
 
 ### Lista um recado
 GET {{baseUrl}}/recados/58/

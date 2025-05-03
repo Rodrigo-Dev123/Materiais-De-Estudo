@@ -13,7 +13,11 @@ const app_service_1 = require("./app.service");
 const recados_module_1 = require("../recados/recados.module");
 const typeorm_1 = require("@nestjs/typeorm");
 const pessoas_module_1 = require("../pessoas/pessoas.module");
+const core_1 = require("@nestjs/core");
+const error_exception_filter_1 = require("../common/filters/error-exception.filter");
 let AppModule = class AppModule {
+    configure(consumer) {
+    }
 };
 exports.AppModule = AppModule;
 exports.AppModule = AppModule = __decorate([
@@ -33,7 +37,13 @@ exports.AppModule = AppModule = __decorate([
             pessoas_module_1.PessoasModule,
         ],
         controllers: [app_controller_1.AppController],
-        providers: [app_service_1.AppService],
+        providers: [
+            app_service_1.AppService,
+            {
+                provide: core_1.APP_FILTER,
+                useClass: error_exception_filter_1.ErrorExceptionFilter,
+            },
+        ],
     })
 ], AppModule);
 //# sourceMappingURL=app.module.js.map
