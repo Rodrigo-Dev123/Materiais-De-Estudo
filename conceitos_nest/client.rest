@@ -15,12 +15,12 @@ Content-Type: application/json
 
 {
     "texto": "Novo recado",
-    "deId": 1,
-    "paraId": 1
+    "deId": 13,
+    "paraId": 4
 }
 
 ### Atualiza um recado
-PATCH  {{baseUrl}}/recados/7
+PATCH  {{baseUrl}}/recados/59
 Content-Type: application/json
 
 {

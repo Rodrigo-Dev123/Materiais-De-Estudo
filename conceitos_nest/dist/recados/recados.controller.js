@@ -18,22 +18,20 @@ const recados_service_1 = require("./recados.service");
 const create_recado_dto_1 = require("./dto/create-recado.dto");
 const update_recado_dto_1 = require("./dto/update-recado.dto");
 const pagination_dto_1 = require("../common/dto/pagination.dto");
-const add_header_interceptor_1 = require("../common/interceptors/add-header.interceptor");
-const error_handling_interceptor_1 = require("../common/interceptors/error-handling.interceptor");
+const req_data_param_decorator_1 = require("../common/params/req-data-param.decorator");
 let RecadosController = class RecadosController {
     recadosService;
     constructor(recadosService) {
         this.recadosService = recadosService;
     }
-    findAll(paginationDto, req) {
-        console.log('RecadosController', req['user']);
-        throw Error('Mensagem de erro');
+    findAll(paginationDto, method) {
+        console.log(method);
+        return this.recadosService.findAll(paginationDto);
     }
     findOne(id) {
         return this.recadosService.findOne(id);
     }
     create(createRecadoDto) {
-        console.log(createRecadoDto);
         return this.recadosService.create(createRecadoDto);
     }
     update(id, updateRecadoDto) {
@@ -45,17 +43,15 @@ let RecadosController = class RecadosController {
 };
 exports.RecadosController = RecadosController;
 __decorate([
-    (0, common_1.HttpCode)(common_1.HttpStatus.OK),
     (0, common_1.Get)(),
     __param(0, (0, common_1.Query)()),
-    __param(1, (0, common_1.Req)()),
+    __param(1, (0, req_data_param_decorator_1.ReqDataParam)('headers')),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [pagination_dto_1.PaginationDto, Request]),
+    __metadata("design:paramtypes", [pagination_dto_1.PaginationDto, String]),
     __metadata("design:returntype", void 0)
 ], RecadosController.prototype, "findAll", null);
 __decorate([
     (0, common_1.Get)(':id'),
-    (0, common_1.UseInterceptors)(add_header_interceptor_1.AddHeaderInterceptor, error_handling_interceptor_1.ErrorHandlingInterceptor),
     __param(0, (0, common_1.Param)('id')),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Number]),
