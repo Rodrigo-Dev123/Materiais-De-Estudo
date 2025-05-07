@@ -18,12 +18,15 @@ const recado_entity_1 = require("./entities/recado.entity");
 const typeorm_1 = require("@nestjs/typeorm");
 const typeorm_2 = require("typeorm");
 const pessoas_service_1 = require("../pessoas/pessoas.service");
+const racados_utils_1 = require("./racados.utils");
 let RecadosService = class RecadosService {
     recadoRepository;
     pessoasService;
-    constructor(recadoRepository, pessoasService) {
+    recadosUtils;
+    constructor(recadoRepository, pessoasService, recadosUtils) {
         this.recadoRepository = recadoRepository;
         this.pessoasService = pessoasService;
+        this.recadosUtils = recadosUtils;
     }
     throwNotFoundError() {
         throw new common_1.NotFoundException('Recado nao encontrado!');
@@ -111,6 +114,7 @@ exports.RecadosService = RecadosService = __decorate([
     (0, common_1.Injectable)(),
     __param(0, (0, typeorm_1.InjectRepository)(recado_entity_1.Recado)),
     __metadata("design:paramtypes", [typeorm_2.Repository,
-        pessoas_service_1.PessoasService])
+        pessoas_service_1.PessoasService,
+        racados_utils_1.RecadosUtils])
 ], RecadosService);
 //# sourceMappingURL=recados.service.js.map
