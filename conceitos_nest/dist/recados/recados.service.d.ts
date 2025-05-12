@@ -4,12 +4,10 @@ import { UpdateRecadoDto } from './dto/update-recado.dto';
 import { Repository } from 'typeorm';
 import { PessoasService } from 'src/pessoas/pessoas.service';
 import { PaginationDto } from 'src/common/dto/pagination.dto';
-import { RecadosUtils } from './racados.utils';
 export declare class RecadosService {
     private readonly recadoRepository;
     private readonly pessoasService;
-    private readonly recadosUtils;
-    constructor(recadoRepository: Repository<Recado>, pessoasService: PessoasService, recadosUtils: RecadosUtils);
+    constructor(recadoRepository: Repository<Recado>, pessoasService: PessoasService);
     throwNotFoundError(): void;
     findAll(paginationDto: PaginationDto): Promise<Recado[]>;
     findOne(id: number): Promise<Recado>;

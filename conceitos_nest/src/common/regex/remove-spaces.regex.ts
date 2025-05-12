@@ -1,6 +1,6 @@
-import { RegexProtocal } from './regex.protocol';
+import { RegexProtocol } from './regex.protocol';
 
-export class RemoveSpacesRegex extends RegexProtocal {
+export class RemoveSpacesRegex implements RegexProtocol {
   execute(string: string): string {
     return string.replace(/\s+/g, '');
   }

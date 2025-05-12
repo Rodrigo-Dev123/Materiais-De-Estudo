@@ -3,7 +3,6 @@ import {
   Controller,
   Delete,
   Get,
-  Inject,
   Param,
   Patch,
   Post,
@@ -13,23 +12,17 @@ import { RecadosService } from './recados.service';
 import { CreateRecadoDto } from './dto/create-recado.dto';
 import { UpdateRecadoDto } from './dto/update-recado.dto';
 import { PaginationDto } from 'src/common/dto/pagination.dto';
-import { SERVER_NAME } from 'src/common/constants/server-name.constants';
 
 // DTO - Data Transfer Object
 // DTO -> Objeto simples -> Validar dados / Transformar dados
 
 @Controller('recados')
 export class RecadosController {
-  constructor(
-    private readonly recadosService: RecadosService,
-    @Inject(SERVER_NAME)
-    private readonly serverName: string,
-  ) {}
+  constructor(private readonly recadosService: RecadosService) {}
 
   // Encontrar todos os recados
   @Get()
   findAll(@Query() paginationDto: PaginationDto) {
-    console.log(this.serverName);
     return this.recadosService.findAll(paginationDto);
   }
 

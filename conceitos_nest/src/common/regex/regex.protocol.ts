@@ -1,3 +1,3 @@
-export abstract class RegexProtocal {
-  abstract execute(string: string): string;
+export interface RegexProtocol {
+  execute(string: string): string;
 }

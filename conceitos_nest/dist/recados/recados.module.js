@@ -14,33 +14,18 @@ const typeorm_1 = require("@nestjs/typeorm");
 const recado_entity_1 = require("./entities/recado.entity");
 const pessoas_module_1 = require("../pessoas/pessoas.module");
 const racados_utils_1 = require("./racados.utils");
-const server_name_constants_1 = require("../common/constants/server-name.constants");
-const regex_protocol_1 = require("../common/regex/regex.protocol");
-const remove_spaces_regex_1 = require("../common/regex/remove-spaces.regex");
-const only_lowercase_letters_regex_1 = require("../common/regex/only-lowercase-letters.regex");
 let RecadosModule = class RecadosModule {
 };
 exports.RecadosModule = RecadosModule;
 exports.RecadosModule = RecadosModule = __decorate([
     (0, common_1.Module)({
-        imports: [typeorm_1.TypeOrmModule.forFeature([recado_entity_1.Recado]), pessoas_module_1.PessoasModule],
-        controllers: [recados_controller_1.RecadosController],
-        providers: [
-            recados_service_1.RecadosService,
-            {
-                provide: racados_utils_1.RecadosUtils,
-                useValue: new racados_utils_1.RecadosUtilsMock(),
-            },
-            {
-                provide: server_name_constants_1.SERVER_NAME,
-                useValue: 'My Name Is NestJS',
-            },
-            {
-                provide: regex_protocol_1.RegexProtocal,
-                useClass: 1 === 1 ? remove_spaces_regex_1.RemoveSpacesRegex : only_lowercase_letters_regex_1.OnlyLowercaseLettersRegex,
-            },
+        imports: [
+            typeorm_1.TypeOrmModule.forFeature([recado_entity_1.Recado]),
+            pessoas_module_1.PessoasModule,
         ],
-        exports: [racados_utils_1.RecadosUtils, server_name_constants_1.SERVER_NAME],
+        controllers: [recados_controller_1.RecadosController],
+        providers: [recados_service_1.RecadosService, racados_utils_1.RecadosUtils],
+        exports: [racados_utils_1.RecadosUtils],
     })
 ], RecadosModule);
 //# sourceMappingURL=recados.module.js.map

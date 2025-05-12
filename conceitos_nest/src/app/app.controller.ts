@@ -7,7 +7,7 @@ export class AppController {
 
   @Get() // Método da solicitação
   getHello(): string {
-    return 'Olá!!!!!!!!!!!!!!!';
+    return 'Hello World!';
   }
 
   @Get('exemplo')

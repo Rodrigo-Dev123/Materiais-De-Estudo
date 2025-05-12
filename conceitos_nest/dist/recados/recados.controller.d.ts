@@ -4,8 +4,7 @@ import { UpdateRecadoDto } from './dto/update-recado.dto';
 import { PaginationDto } from 'src/common/dto/pagination.dto';
 export declare class RecadosController {
     private readonly recadosService;
-    private readonly serverName;
-    constructor(recadosService: RecadosService, serverName: string);
+    constructor(recadosService: RecadosService);
     findAll(paginationDto: PaginationDto): Promise<import("./entities/recado.entity").Recado[]>;
     findOne(id: number): Promise<import("./entities/recado.entity").Recado>;
     create(createRecadoDto: CreateRecadoDto): Promise<{

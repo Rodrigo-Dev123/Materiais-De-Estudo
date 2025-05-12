@@ -18,16 +18,12 @@ const recados_service_1 = require("./recados.service");
 const create_recado_dto_1 = require("./dto/create-recado.dto");
 const update_recado_dto_1 = require("./dto/update-recado.dto");
 const pagination_dto_1 = require("../common/dto/pagination.dto");
-const server_name_constants_1 = require("../common/constants/server-name.constants");
 let RecadosController = class RecadosController {
     recadosService;
-    serverName;
-    constructor(recadosService, serverName) {
+    constructor(recadosService) {
         this.recadosService = recadosService;
-        this.serverName = serverName;
     }
     findAll(paginationDto) {
-        console.log(this.serverName);
         return this.recadosService.findAll(paginationDto);
     }
     findOne(id) {
@@ -82,7 +78,6 @@ __decorate([
 ], RecadosController.prototype, "remove", null);
 exports.RecadosController = RecadosController = __decorate([
     (0, common_1.Controller)('recados'),
-    __param(1, (0, common_1.Inject)(server_name_constants_1.SERVER_NAME)),
-    __metadata("design:paramtypes", [recados_service_1.RecadosService, String])
+    __metadata("design:paramtypes", [recados_service_1.RecadosService])
 ], RecadosController);
 //# sourceMappingURL=recados.controller.js.map

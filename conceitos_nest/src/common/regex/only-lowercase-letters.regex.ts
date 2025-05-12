@@ -1,6 +1,6 @@
-import { RegexProtocal } from './regex.protocol';
+import { RegexProtocol } from './regex.protocol';
 
-export class OnlyLowercaseLettersRegex extends RegexProtocal {
+export class OnlyLowercaseLettersRegex implements RegexProtocol {
   execute(string: string): string {
     return string.replace(/[^a-z]/g, '');
   }

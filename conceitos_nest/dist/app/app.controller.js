@@ -18,7 +18,7 @@ let AppController = class AppController {
         this.appService = appService;
     }
     getHello() {
-        return 'Olá!!!!!!!!!!!!!!!';
+        return 'Hello World!';
     }
     exemplo() {
         return this.appService.solucionaExemplo();

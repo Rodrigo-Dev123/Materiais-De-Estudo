@@ -12,16 +12,12 @@ const pessoas_service_1 = require("./pessoas.service");
 const pessoas_controller_1 = require("./pessoas.controller");
 const typeorm_1 = require("@nestjs/typeorm");
 const pessoa_entity_1 = require("./entities/pessoa.entity");
-const recados_module_1 = require("../recados/recados.module");
 let PessoasModule = class PessoasModule {
 };
 exports.PessoasModule = PessoasModule;
 exports.PessoasModule = PessoasModule = __decorate([
     (0, common_1.Module)({
-        imports: [
-            typeorm_1.TypeOrmModule.forFeature([pessoa_entity_1.Pessoa]),
-            (0, common_1.forwardRef)(() => recados_module_1.RecadosModule),
-        ],
+        imports: [typeorm_1.TypeOrmModule.forFeature([pessoa_entity_1.Pessoa])],
         controllers: [pessoas_controller_1.PessoasController],
         providers: [pessoas_service_1.PessoasService],
         exports: [pessoas_service_1.PessoasService],
