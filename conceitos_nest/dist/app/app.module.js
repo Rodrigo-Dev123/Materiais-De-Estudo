@@ -13,12 +13,14 @@ const app_service_1 = require("./app.service");
 const recados_module_1 = require("../recados/recados.module");
 const typeorm_1 = require("@nestjs/typeorm");
 const pessoas_module_1 = require("../pessoas/pessoas.module");
+const config_1 = require("@nestjs/config");
 let AppModule = class AppModule {
 };
 exports.AppModule = AppModule;
 exports.AppModule = AppModule = __decorate([
     (0, common_1.Module)({
         imports: [
+            config_1.ConfigModule.forRoot(),
             typeorm_1.TypeOrmModule.forRoot({
                 type: 'postgres',
                 host: 'localhost',

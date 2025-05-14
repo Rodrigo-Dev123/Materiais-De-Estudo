@@ -108,7 +108,7 @@ let RecadosService = class RecadosService {
 };
 exports.RecadosService = RecadosService;
 exports.RecadosService = RecadosService = __decorate([
-    (0, common_1.Injectable)(),
+    (0, common_1.Injectable)({ scope: common_1.Scope.DEFAULT }),
     __param(0, (0, typeorm_1.InjectRepository)(recado_entity_1.Recado)),
     __metadata("design:paramtypes", [typeorm_2.Repository,
         pessoas_service_1.PessoasService])
