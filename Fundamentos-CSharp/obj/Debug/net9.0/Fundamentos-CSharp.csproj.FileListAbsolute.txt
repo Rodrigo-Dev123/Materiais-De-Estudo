@@ -1,0 +1,15 @@
+/home/rodrigo/Documents/Materiais-De-Estudo/Fundamentos-CSharp/bin/Debug/net9.0/Fundamentos-CSharp
+/home/rodrigo/Documents/Materiais-De-Estudo/Fundamentos-CSharp/bin/Debug/net9.0/Fundamentos-CSharp.deps.json
+/home/rodrigo/Documents/Materiais-De-Estudo/Fundamentos-CSharp/bin/Debug/net9.0/Fundamentos-CSharp.runtimeconfig.json
+/home/rodrigo/Documents/Materiais-De-Estudo/Fundamentos-CSharp/bin/Debug/net9.0/Fundamentos-CSharp.dll
+/home/rodrigo/Documents/Materiais-De-Estudo/Fundamentos-CSharp/bin/Debug/net9.0/Fundamentos-CSharp.pdb
+/home/rodrigo/Documents/Materiais-De-Estudo/Fundamentos-CSharp/obj/Debug/net9.0/Fundamentos-CSharp.GeneratedMSBuildEditorConfig.editorconfig
+/home/rodrigo/Documents/Materiais-De-Estudo/Fundamentos-CSharp/obj/Debug/net9.0/Fundamentos-CSharp.AssemblyInfoInputs.cache
+/home/rodrigo/Documents/Materiais-De-Estudo/Fundamentos-CSharp/obj/Debug/net9.0/Fundamentos-CSharp.AssemblyInfo.cs
+/home/rodrigo/Documents/Materiais-De-Estudo/Fundamentos-CSharp/obj/Debug/net9.0/Fundamentos-CSharp.csproj.CoreCompileInputs.cache
+/home/rodrigo/Documents/Materiais-De-Estudo/Fundamentos-CSharp/obj/Debug/net9.0/Fundamentos-CSharp.sourcelink.json
+/home/rodrigo/Documents/Materiais-De-Estudo/Fundamentos-CSharp/obj/Debug/net9.0/Fundamentos-CSharp.dll
+/home/rodrigo/Documents/Materiais-De-Estudo/Fundamentos-CSharp/obj/Debug/net9.0/refint/Fundamentos-CSharp.dll
+/home/rodrigo/Documents/Materiais-De-Estudo/Fundamentos-CSharp/obj/Debug/net9.0/Fundamentos-CSharp.pdb
+/home/rodrigo/Documents/Materiais-De-Estudo/Fundamentos-CSharp/obj/Debug/net9.0/Fundamentos-CSharp.genruntimeconfig.cache
+/home/rodrigo/Documents/Materiais-De-Estudo/Fundamentos-CSharp/obj/Debug/net9.0/ref/Fundamentos-CSharp.dll
