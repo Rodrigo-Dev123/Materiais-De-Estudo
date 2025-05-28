@@ -39,6 +39,7 @@ DELETE  {{baseUrl}}/recados/3/
 GET {{baseUrl}}/pessoas/
 ?limit=100
 &offset=100
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjUsImVtYWlsIjoiZW1haWwxMjNAZ21haWwuY29tIiwiaWF0IjoxNzQ4NDYyMTczLCJleHAiOjE3NDg0NjU3NzMsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6MzAwMCIsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6MzAwMCJ9.baZoZtNIpVO7shBHyDbWWhK5wzsYGxp2RFSoLon2ldA
 
 ### Lista uma pessoa
 GET {{baseUrl}}/pessoas/1/
