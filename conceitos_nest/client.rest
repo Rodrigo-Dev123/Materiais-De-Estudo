@@ -48,13 +48,13 @@ POST {{baseUrl}}/pessoas/
 Content-Type: application/json
 
 {
-    "email": "email@gmail.com",
+    "email": "email123@gmail.com",
     "password": "123456",
     "nome": "Rodrigo"
 }
 
 ### Atualiza uma Pessoa
-PATCH  {{baseUrl}}/pessoas/4
+PATCH  {{baseUrl}}/pessoas/5
 Content-Type: application/json
 
 {
@@ -68,6 +68,16 @@ DELETE  {{baseUrl}}/pessoas/10/
 
 
 
+#AUTH 
+
+### Login
+POST {{baseUrl}}/auth/
+Content-Type: application/json
+
+{
+    "email": "email123@gmail.com",
+    "password": "1234567"
+}
 
 ### AppControllerGetHello
 # @name AppControllerGetHello
