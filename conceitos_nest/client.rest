@@ -4,23 +4,25 @@
 GET {{baseUrl}}/recados/
 ?limit=50
 &offset=0
-Authorization: Bearer 123456
+Authorization: Bearer {{authToken}}
 
 ### Lista um recado
-GET {{baseUrl}}/recados/58/
+GET {{baseUrl}}/recados/2/
+Authorization: Bearer {{authToken}}
 
 ### Cria recado
 POST {{baseUrl}}/recados/
+Authorization: Bearer {{authToken}}
 Content-Type: application/json
 
 {
     "texto": "Novo recado",
-    "deId": 1,
     "paraId": 3
 }
 
 ### Atualiza um recado
-PATCH  {{baseUrl}}/recados/59
+PATCH  {{baseUrl}}/recados/3
+Authorization: Bearer {{authToken}}
 Content-Type: application/json
 
 {
@@ -29,7 +31,8 @@ Content-Type: application/json
 }
 
 ### Apaga um recado
-DELETE  {{baseUrl}}/recados/3/
+DELETE  {{baseUrl}}/recados/4/
+Authorization: Bearer {{authToken}}
 
 
 
@@ -41,7 +44,7 @@ GET {{baseUrl}}/pessoas/
 &offset=100
 Authorization: Bearer {{authToken}}
 ### Lista uma pessoa
-GET {{baseUrl}}/pessoas/1/
+GET {{baseUrl}}/pessoas/5/
 Authorization: Bearer {{authToken}}
 
 ### Cria Pessoa
@@ -49,13 +52,13 @@ POST {{baseUrl}}/pessoas/
 Content-Type: application/json
 
 {
-    "email": "email123@gmail.com",
-    "password": "123456",
+    "email": "email&&&&&@gmail.com",
+    "password": "1234567",
     "nome": "Rodrigo"
 }
 
 ### Atualiza uma Pessoa
-PATCH  {{baseUrl}}/pessoas/3
+PATCH  {{baseUrl}}/pessoas/5
 Content-Type: application/json
 Authorization: Bearer {{authToken}}
 
@@ -65,7 +68,8 @@ Authorization: Bearer {{authToken}}
 }
 
 ### Apaga uma Pessoa
-DELETE  {{baseUrl}}/pessoas/10/
+DELETE  {{baseUrl}}/pessoas/5/
+Authorization: Bearer {{authToken}}
 
 
 
@@ -78,9 +82,14 @@ POST {{baseUrl}}/auth/
 Content-Type: application/json
 
 {
-    "email": "email123@gmail.com",
+    "email": "email&&&&&@gmail.com",
     "password": "1234567"
 }
+
+# Get User Info
+### AppControllerGetMe
+GET {{baseUrl}}/auth/me/
+Authorization: Bearer {{authToken}}
 
 ### AppControllerGetHello
 # @name AppControllerGetHello

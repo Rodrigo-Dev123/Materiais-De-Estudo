@@ -8,6 +8,7 @@ import { Pessoa } from 'src/pessoas/entities/pessoa.entity';
 import { ConfigModule } from '@nestjs/config';
 import jwtConfig from './config/jwt.config';
 import { JwtModule } from '@nestjs/jwt';
+import { PessoasModule } from 'src/pessoas/pessoas.module';
 
 @Global()
 @Module({
@@ -15,6 +16,7 @@ import { JwtModule } from '@nestjs/jwt';
     TypeOrmModule.forFeature([Pessoa]),
     ConfigModule.forFeature(jwtConfig),
     JwtModule.registerAsync(jwtConfig.asProvider()),
+    PessoasModule,
   ],
   controllers: [AuthController],
   providers: [
