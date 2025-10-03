@@ -6,6 +6,9 @@ node_modules/
 .env.production
 venv/
 .venv
+env/
+ENV/
+.venv
 
 mysql-volume
 
@@ -16,3 +19,14 @@ static_files
 
 dist/
 **/dist/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.py[cod]
+**/__pycache__/
+./**/__pycache__/
+FastApiZeroAteDeploy/__pycache__/
+FastApiZeroAteDeploy/**/__pycache__/
