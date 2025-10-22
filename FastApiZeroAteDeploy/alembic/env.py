@@ -5,7 +5,7 @@ from sqlalchemy import pool
 
 from alembic import context
 
-from contas_a_pagar_e_receber.models.contas_a_pagar_e_receber import ContasAPagarReceber
+from contas_a_pagar_e_receber.models.contas_a_pagar_e_receber import ContasAPagarReceber # pylint: disable=unused-import
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
