@@ -10,29 +10,30 @@ router = APIRouter()
 
 class ContaPagarReceberResponse(BaseModel):
     id: int
-    descrico: str
+    descricao: str
     valor: float
     age: int | None = None
     tipo: str
 
 class ContaPagarReceberRequest(BaseModel):
-    descrico: str
+    descricao: str
     valor: float
     age: int | None = None
     tipo: str
 
-@router.get("", response_model=list[ContaPagarReceberResponse])
+@router.get("", response_model=list[ContasAPagarReceber])
 def listar_contas(
     session: SessionDep,
     offset: int = 0,
     limit: Annotated[int, Query(le=100)] = 100,
 ) -> list[ContasAPagarReceber]:
-    heroes = session.exec(select(ContasAPagarReceber).offset(offset).limit(limit)).all()
-    return heroes
+    contas = list(session.exec(select(ContasAPagarReceber).offset(offset).limit(limit)).all())
+    return contas
 
-@router.post("", response_model=ContasAPagarReceber, status_code=201)
-def criar_conta(conta: ContasAPagarReceber, session: SessionDep):
-    session.add(conta)
+@router.post("", response_model=ContaPagarReceberResponse, status_code=201)
+def criar_conta(conta: ContaPagarReceberRequest, session: SessionDep):
+    conta_db = ContasAPagarReceber(**conta.model_dump())
+    session.add(conta_db)
     session.commit()
-    session.refresh(conta)
-    return conta
+    session.refresh(conta_db)
+    return conta_db
