@@ -12,13 +12,11 @@ class ContaPagarReceberResponse(BaseModel):
     id: int
     descricao: str
     valor: float
-    age: int | None = None
     tipo: str
 
 class ContaPagarReceberRequest(BaseModel):
     descricao: str
     valor: float
-    age: int | None = None
     tipo: str
 
 @router.get("", response_model=list[ContasAPagarReceber])

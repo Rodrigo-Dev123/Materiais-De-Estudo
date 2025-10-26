@@ -9,7 +9,7 @@ services:
       - pg_fastapi:/var/lib/postgresql/data
     ports:
       - "5432:5432"
-    restart: always
+    # restart: always
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U test -d pg_fastapi"]
       interval: 5s

@@ -6,5 +6,4 @@ class ContasAPagarReceber(SQLModel, table=True):
     id: int | None = Field(default=None, primary_key=True)
     descricao: str
     valor: float
-    age: int | None = None
     tipo: str
