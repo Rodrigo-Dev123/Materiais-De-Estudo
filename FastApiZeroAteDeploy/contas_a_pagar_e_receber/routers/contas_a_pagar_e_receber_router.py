@@ -1,6 +1,7 @@
 from typing import Annotated
+from enum import Enum
 from fastapi import APIRouter, Depends, FastAPI, HTTPException, Query
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 from decimal import Decimal
 from shared.dependencies import SessionDep
 from contas_a_pagar_e_receber.models.contas_a_pagar_e_receber import ContasAPagarReceber
@@ -8,16 +9,20 @@ from sqlmodel import select
 
 router = APIRouter()
 
+class ContaPagarReceber(str, Enum):
+    PAGAR = "Pagar"
+    RECEBER = "Receber"
+
 class ContaPagarReceberResponse(BaseModel):
     id: int
     descricao: str
-    valor: float
+    valor: Decimal
     tipo: str
 
 class ContaPagarReceberRequest(BaseModel):
-    descricao: str
-    valor: float
-    tipo: str
+    descricao: str = Field(min_length=3, max_length=30)
+    valor: Decimal = Field(gt=0)
+    tipo: ContaPagarReceber
 
 @router.get("", response_model=list[ContasAPagarReceber])
 def listar_contas(
