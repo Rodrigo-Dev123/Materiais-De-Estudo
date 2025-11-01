@@ -71,16 +71,38 @@ def test_deve_criar_contas_a_pagar_e_receber():
     assert response1.json() == {
         "id": 1,
         "descricao": "Conta de luz",
-        "valor": '100.0',
+        "valor": 100.0,
         "tipo": "Pagar"
     }
 
     assert response2.json() == {
         "id": 2,
         "descricao": "Aluguel",
-        "valor": '1000.0',
+        "valor": 1000.0,
         "tipo": "Pagar",
     }
+
+def test_deve_atualizar_contas_a_pagar_e_receber():
+    SQLModel.metadata.drop_all(engine)
+    SQLModel.metadata.create_all(engine)
+
+    response = client.post("/contas-a-pagar-e-receber", json={
+        "descricao": "Conta de luz",
+        "valor": '100.00',
+        "tipo": "Pagar",
+    })
+
+    id_contas_a_pagar_e_receber = response.json()['id']
+
+    response = client.put(f"/contas-a-pagar-e-receber/{id_contas_a_pagar_e_receber}", json={
+        "descricao": "Aluguel",
+        "valor": '1000.00',
+        "tipo": "Pagar",
+    })
+
+    assert response.status_code == 200
+    assert response.json()['valor'] == 1000.0
+
 
 def test_deve_retornar_erro_quando_a_descricao_for_menor_que_3():
     SQLModel.metadata.drop_all(engine)
