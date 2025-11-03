@@ -65,10 +65,22 @@ def atualizar_conta(id_da_conta_a_pagar_e_receber: int, conta: ContaPagarReceber
         raise HTTPException(status_code=404, detail="Account not found")
 
     update_data = conta.model_dump(exclude_unset=True)
-    
+
     db_conta.sqlmodel_update(update_data)
 
     session.add(db_conta)
     session.commit()
     session.refresh(db_conta)
     return db_conta
+
+
+@router.delete("/{id_da_conta_a_pagar_e_receber}", status_code=204)
+def deletar_conta(id_da_conta_a_pagar_e_receber: int, session: SessionDep):
+    db_conta = session.get(ContasAPagarReceber, id_da_conta_a_pagar_e_receber)
+    if not db_conta:
+        raise HTTPException(status_code=404, detail="Account not found")
+
+    session.delete(db_conta)
+    session.commit()
+
+    return {"ok": True}

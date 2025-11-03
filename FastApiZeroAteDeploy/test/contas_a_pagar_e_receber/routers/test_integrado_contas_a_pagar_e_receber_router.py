@@ -15,11 +15,14 @@ engine = create_engine(
 
 TestSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
+
 def override_get_db():
     with Session(engine, autocommit=False, autoflush=False) as session:
         yield session
 
+
 app.dependency_overrides[get_session] = override_get_db
+
 
 def test_deve_listar_contas_a_pagar_e_receber():
     SQLModel.metadata.drop_all(engine)
@@ -46,10 +49,11 @@ def test_deve_listar_contas_a_pagar_e_receber():
 
     assert response.status_code == 200
 
+
 def test_deve_criar_contas_a_pagar_e_receber():
     SQLModel.metadata.drop_all(engine)
     SQLModel.metadata.create_all(engine)
-  
+
     nova_conta1 = {
         "descricao": "Conta de luz",
         "valor": '100.00',
@@ -82,6 +86,7 @@ def test_deve_criar_contas_a_pagar_e_receber():
         "tipo": "Pagar",
     }
 
+
 def test_deve_atualizar_contas_a_pagar_e_receber():
     SQLModel.metadata.drop_all(engine)
     SQLModel.metadata.create_all(engine)
@@ -94,14 +99,31 @@ def test_deve_atualizar_contas_a_pagar_e_receber():
 
     id_contas_a_pagar_e_receber = response.json()['id']
 
-    response = client.put(f"/contas-a-pagar-e-receber/{id_contas_a_pagar_e_receber}", json={
+    response_put = client.put(f"/contas-a-pagar-e-receber/{id_contas_a_pagar_e_receber}", json={
         "descricao": "Aluguel",
         "valor": '1000.00',
         "tipo": "Pagar",
     })
 
-    assert response.status_code == 200
-    assert response.json()['valor'] == 1000.0
+    assert response_put.status_code == 200
+    assert response_put.json()['valor'] == 1000.0
+
+
+def test_deve_remover_contas_a_pagar_e_receber():
+    SQLModel.metadata.drop_all(engine)
+    SQLModel.metadata.create_all(engine)
+
+    response = client.post("/contas-a-pagar-e-receber", json={
+        "descricao": "Conta de luz",
+        "valor": '100.00',
+        "tipo": "Pagar",
+    })
+
+    id_contas_a_pagar_e_receber = response.json()['id']
+
+    response_delete = client.delete(f"/contas-a-pagar-e-receber/{id_contas_a_pagar_e_receber}")
+
+    assert response_delete.status_code == 204
 
 
 def test_deve_retornar_erro_quando_a_descricao_for_menor_que_3():
@@ -119,6 +141,7 @@ def test_deve_retornar_erro_quando_a_descricao_for_menor_que_3():
     assert response.status_code == 422
     assert response.json()['detail'][0]['loc'] == ["body", "descricao"]
 
+
 def test_deve_retornar_erro_quando_exeder_a_descricao():
     SQLModel.metadata.drop_all(engine)
     SQLModel.metadata.create_all(engine)
@@ -133,6 +156,7 @@ def test_deve_retornar_erro_quando_exeder_a_descricao():
 
     assert response.status_code == 422
     assert response.json()['detail'][0]['loc'] == ["body", "descricao"]
+
 
 def test_deve_retornar_erro_quando_valor_for_zero_ou_menor():
     SQLModel.metadata.drop_all(engine)
@@ -157,6 +181,7 @@ def test_deve_retornar_erro_quando_valor_for_zero_ou_menor():
     assert response.status_code == 422
     assert response.json()['detail'][0]['loc'] == ["body", "valor"]
 
+
 def test_deve_retornar_erro_quando_o_tipo_for_invalido():
     SQLModel.metadata.drop_all(engine)
     SQLModel.metadata.create_all(engine)
@@ -171,4 +196,3 @@ def test_deve_retornar_erro_quando_o_tipo_for_invalido():
 
     assert response.status_code == 422
     assert response.json()['detail'][0]['loc'] == ["body", "tipo"]
-
