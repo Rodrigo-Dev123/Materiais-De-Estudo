@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a1f47347-1418-4624-aabe-dfe9803fe6c8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Curso-Java.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maratona-java/maratona-java.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maratona-java/src/academy/academy.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/material_theme_project_new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/material_theme_project_new.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Curso-Java.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/maratona-java/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/maratona-java/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/maratona-java/.idea/material_theme_project_new.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/maratona-java/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/maratona-java/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/maratona-java/maratona-java.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/maratona-java/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/maratona-java/src/academy/devdojo/maratonajava/introducao/Aula01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/maratona-java/src/academy/devdojo/maratonajava/introducao/Aula02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/maratona-java/src/academy/devdojo/maratonajava/introducao/Aula04Operadores.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/maratona-java/src/academy/devdojo/maratonajava/introducao/Aula05EstruturasCondicionais.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/maratona-java/src/academy/devdojo/maratonajava/introducao/Aula07Arrays01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/maratona-java/src/academy/devdojo/maratonajava/introducao/Aula07Arrays02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/maratona-java/src/academy/devdojo/maratonajava/introducao/Aula07Arrays03.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/maratona-java/src/academy/devdojo/maratonajava/introducao/Aula08ArraysMultidimensionais01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/maratona-java/src/academy/devdojo/maratonajava/introducao/Aula08ArraysMultidimensionais02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/maratona-java/src/academy/devdojo/maratonajava/javacore/introducaoclasses/dominio/Pessoa.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="35z4aX6qKFzd50kGFBfmfmEncRE" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/rodrigo/Documents/Materiais-De-Estudo/Curso-Java",
+    "settings.editor.selected.configurable": "settings.sync"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a1f47347-1418-4624-aabe-dfe9803fe6c8" name="Changes" comment="" />
+      <created>1764099629943</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1764099629943</updated>
+    </task>
+    <servers />
+  </component>
+</project>
