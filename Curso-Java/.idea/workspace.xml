@@ -5,23 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a1f47347-1418-4624-aabe-dfe9803fe6c8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Aintroducaoclasses/dominio/Carro.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Aintroducaoclasses/dominio/Professor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Aintroducaoclasses/test/CarroTest01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Aintroducaoclasses/test/EstudanteTest01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Aintroducaoclasses/test/EstudanteTest02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Aintroducaoclasses/test/ProfessorTest01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Bintroducaometodos/dominio/Calculadora.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Bintroducaometodos/test/CalculadoraTest01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Bintroducaometodos/test/CalculadoraTest02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Bintroducaometodos/test/CalculadoraTest03.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/introducaoclasses/dominio/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Aintroducaoclasses/dominio/Estudante.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/introducaoclasses/test/PessoaTest01.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Curso-Java/academy/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Curso-Java/academy/.idea/material_theme_project_new.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Curso-Java/academy/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Curso-Java/academy/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Curso-Java/academy/academy.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Bintroducaometodos/dominio/Calculadora.java" beforeDir="false" afterPath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Bintroducaometodos/dominio/Calculadora.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Curso-Java/academy/devdojo/maratonajava/javacore/Bintroducaometodos/dominio/Calculadora.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Curso-Java/academy/devdojo/maratonajava/javacore/Bintroducaometodos/dominio/Calculadora.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +48,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.CalculadoraTest01.executor": "Run",
+    "Application.CalculadoraTest02.executor": "Run",
+    "Application.CalculadoraTest03.executor": "Run",
     "Application.CarroTest01.executor": "Run",
     "Application.EstudanteTest01.executor": "Run",
     "Application.EstudanteTest02.executor": "Run",
