@@ -5,50 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a1f47347-1418-4624-aabe-dfe9803fe6c8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Fmodificadorestatico/domain/Carro.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Fmodificadorestatico/test/CarroTest01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Fmodificadorestatico/dominio/Anime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Fmodificadorestatico/test/AnimeTest01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Gassociacao/dominio/Jogador.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Gassociacao/dominio/Time.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Gassociacao/test/JogadorTest01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Gassociacao/test/JogadorTeste02.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Curso-Java/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Curso-Java/academy/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Curso-Java/academy/.idea/material_theme_project_new.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Curso-Java/academy/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Curso-Java/academy/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Curso-Java/academy/academy.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Curso-Java/academy/devdojo/maratonajava/introducao/Aula01.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Curso-Java/academy/devdojo/maratonajava/introducao/Aula02.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Curso-Java/academy/devdojo/maratonajava/introducao/Aula04Operadores.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Curso-Java/academy/devdojo/maratonajava/introducao/Aula05EstruturasCondicionais.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Curso-Java/academy/devdojo/maratonajava/introducao/Aula07Arrays01.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Curso-Java/academy/devdojo/maratonajava/introducao/Aula07Arrays02.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Curso-Java/academy/devdojo/maratonajava/introducao/Aula07Arrays03.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Curso-Java/academy/devdojo/maratonajava/introducao/Aula08ArraysMultidimensionais01.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Curso-Java/academy/devdojo/maratonajava/introducao/Aula08ArraysMultidimensionais02.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Curso-Java/academy/devdojo/maratonajava/javacore/Aintroducaoclasses/dominio/Carro.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Curso-Java/academy/devdojo/maratonajava/javacore/Aintroducaoclasses/dominio/Estudante.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Curso-Java/academy/devdojo/maratonajava/javacore/Aintroducaoclasses/dominio/Professor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Curso-Java/academy/devdojo/maratonajava/javacore/Aintroducaoclasses/test/CarroTest01.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Curso-Java/academy/devdojo/maratonajava/javacore/Aintroducaoclasses/test/EstudanteTest01.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Curso-Java/academy/devdojo/maratonajava/javacore/Aintroducaoclasses/test/EstudanteTest02.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Curso-Java/academy/devdojo/maratonajava/javacore/Aintroducaoclasses/test/ProfessorTest01.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Curso-Java/academy/devdojo/maratonajava/javacore/Bintroducaometodos/dominio/Calculadora.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Curso-Java/academy/devdojo/maratonajava/javacore/Bintroducaometodos/dominio/Estudante.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Curso-Java/academy/devdojo/maratonajava/javacore/Bintroducaometodos/dominio/Funcionario.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Curso-Java/academy/devdojo/maratonajava/javacore/Bintroducaometodos/dominio/ImpressoraEstudante.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Curso-Java/academy/devdojo/maratonajava/javacore/Bintroducaometodos/dominio/Pessoa.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Curso-Java/academy/devdojo/maratonajava/javacore/Bintroducaometodos/test/CalculadoraTest01.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Curso-Java/academy/devdojo/maratonajava/javacore/Bintroducaometodos/test/CalculadoraTest02.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Curso-Java/academy/devdojo/maratonajava/javacore/Bintroducaometodos/test/CalculadoraTest03.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Curso-Java/academy/devdojo/maratonajava/javacore/Bintroducaometodos/test/CalculadoraTest05.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Curso-Java/academy/devdojo/maratonajava/javacore/Bintroducaometodos/test/EstudanteTest01.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Curso-Java/academy/devdojo/maratonajava/javacore/Bintroducaometodos/test/EstudanteTest02.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Curso-Java/academy/devdojo/maratonajava/javacore/Bintroducaometodos/test/FuncionarioTest01.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Curso-Java/academy/devdojo/maratonajava/javacore/Bintroducaometodos/test/PessoaTest01.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Curso-Java/academy/devdojo/maratonajava/javacore/Csobrecargametodos/dominio/Anime.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Curso-Java/academy/devdojo/maratonajava/javacore/Csobrecargametodos/test/AnimeTest01.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Curso-Java/academy/devdojo/maratonajava/javacore/Dconstrutores/dominio/dominio/Anime.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Curso-Java/academy/devdojo/maratonajava/javacore/Dconstrutores/dominio/test/AnimeTest01.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Curso-Java/academy/devdojo/maratonajava/javacore/Eblocosinicializacao/domain/Anime.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Curso-Java/academy/devdojo/maratonajava/javacore/Eblocosinicializacao/test/AnimeTest01.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Fmodificadorestatico/domain/Carro.java" beforeDir="false" afterPath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Fmodificadorestatico/dominio/Carro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Fmodificadorestatico/test/CarroTest01.java" beforeDir="false" afterPath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Fmodificadorestatico/test/CarroTest01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Curso-Java/academy/devdojo/maratonajava/javacore/Fmodificadorestatico/domain/Carro.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Curso-Java/academy/devdojo/maratonajava/javacore/Fmodificadorestatico/test/CarroTest01.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +44,9 @@
     &quot;accountId&quot;: &quot;1b0a225d-567f-4980-8f57-512f337f5712&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Fmodificadorestatico/domain/Carro.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
@@ -101,9 +71,11 @@
     "Application.EstudanteTest01.executor": "Run",
     "Application.EstudanteTest02.executor": "Run",
     "Application.FuncionarioTest01.executor": "Run",
+    "Application.JogadorTest01.executor": "Profiler#1",
     "Application.PessoaTest01.executor": "Run",
     "Application.academy.devdojo.maratonajava.javacore.Dconstrutores.dominio.test.AnimeTest01.executor": "Run",
     "Application.academy.devdojo.maratonajava.javacore.Eblocosinicializacao.test.AnimeTest01.executor": "Debug",
+    "Application.academy.devdojo.maratonajava.javacore.Fmodificadorestatico.test.AnimeTest01.executor": "Run",
     "Application.academy.devdojo.maratonajava.javacore.Fmodificadorestatico.test.CarroTest01.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.MCP Project settings loaded": "true",
@@ -132,19 +104,20 @@
       <recent name="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Dconstrutores/dominio" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="academy.devdojo.maratonajava.javacore.Fmodificadorestatico.domain" />
       <recent name="academy.devdojo.maratonajava.javacore.Dconstrutores.dominio" />
       <recent name="academy.devdojo.maratonajava.javacore.Bintroducaometodos.test" />
       <recent name="academy.devdojo.maratonajava.javacore.Aintroducaoclasses.dominio" />
       <recent name="academy.devdojo.maratonajava.javacore.Aintroducaoclasses.test" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.academy.devdojo.maratonajava.javacore.Fmodificadorestatico.test.CarroTest01">
-    <configuration name="AnimeTest01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="academy.devdojo.maratonajava.javacore.Csobrecargametodos.test.AnimeTest01" />
+  <component name="RunManager" selected="Application.JogadorTeste02">
+    <configuration name="JogadorTest01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="academy.devdojo.maratonajava.javacore.Gassociacao.test.JogadorTest01" />
       <module name="Curso-Java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="academy.devdojo.maratonajava.javacore.Csobrecargametodos.test.*" />
+          <option name="PATTERN" value="academy.devdojo.maratonajava.javacore.Gassociacao.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -152,25 +125,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CarroTest01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="academy.devdojo.maratonajava.javacore.Aintroducaoclasses.test.CarroTest01" />
+    <configuration name="JogadorTeste02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="academy.devdojo.maratonajava.javacore.Gassociacao.test.JogadorTeste02" />
       <module name="Curso-Java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="academy.devdojo.maratonajava.javacore.Aintroducaoclasses.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="academy.devdojo.maratonajava.javacore.Dconstrutores.dominio.test.AnimeTest01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="academy.devdojo.maratonajava.javacore.Dconstrutores.dominio.test.AnimeTest01" />
-      <module name="Curso-Java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="academy.devdojo.maratonajava.javacore.Dconstrutores.dominio.test.*" />
+          <option name="PATTERN" value="academy.devdojo.maratonajava.javacore.Gassociacao.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -184,6 +144,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="academy.devdojo.maratonajava.javacore.Eblocosinicializacao.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="academy.devdojo.maratonajava.javacore.Fmodificadorestatico.test.AnimeTest01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="academy.devdojo.maratonajava.javacore.Fmodificadorestatico.test.AnimeTest01" />
+      <module name="Curso-Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="academy.devdojo.maratonajava.javacore.Fmodificadorestatico.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -206,11 +179,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.JogadorTeste02" />
+        <item itemvalue="Application.JogadorTest01" />
+        <item itemvalue="Application.academy.devdojo.maratonajava.javacore.Fmodificadorestatico.test.AnimeTest01" />
         <item itemvalue="Application.academy.devdojo.maratonajava.javacore.Fmodificadorestatico.test.CarroTest01" />
         <item itemvalue="Application.academy.devdojo.maratonajava.javacore.Eblocosinicializacao.test.AnimeTest01" />
-        <item itemvalue="Application.CarroTest01" />
-        <item itemvalue="Application.academy.devdojo.maratonajava.javacore.Dconstrutores.dominio.test.AnimeTest01" />
-        <item itemvalue="Application.AnimeTest01" />
       </list>
     </recent_temporary>
   </component>
@@ -234,7 +207,9 @@
       <workItem from="1768171209096" duration="92000" />
       <workItem from="1768175795742" duration="498000" />
       <workItem from="1768213198784" duration="3105000" />
-      <workItem from="1768217495771" duration="1512000" />
+      <workItem from="1768217495771" duration="3104000" />
+      <workItem from="1768238992170" duration="3000" />
+      <workItem from="1768241061966" duration="5286000" />
     </task>
     <servers />
   </component>
