@@ -5,14 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a1f47347-1418-4624-aabe-dfe9803fe6c8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Gassociacao/dominio/Escola.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Gassociacao/dominio/Professor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Gassociacao/test/EscolaTeste01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Gassociacao/test/JogadorTeste03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Gassociacao/dominio/Aluno.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Gassociacao/dominio/Local.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Gassociacao/dominio/Seminario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Gassociacao/test/LeituraDoTecladoTest01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Gassociacao/test/LeituraDoTecladoTest02.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Gassociacao/dominio/Time.java" beforeDir="false" afterPath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Gassociacao/dominio/Time.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Gassociacao/test/JogadorTest01.java" beforeDir="false" afterPath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Gassociacao/test/JogadorTest01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Curso-Java/academy/devdojo/maratonajava/javacore/Gassociacao/test/JogadorTest01.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Curso-Java/academy/devdojo/maratonajava/javacore/Gassociacao/test/JogadorTest01.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Gassociacao/dominio/Professor.java" beforeDir="false" afterPath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Gassociacao/dominio/Professor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,49 +55,51 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.AnimeTest01.executor": "Run",
-    "Application.Aula08ArraysMultidimensionais02.executor": "Run",
-    "Application.CalculadoraTest01.executor": "Run",
-    "Application.CalculadoraTest02.executor": "Run",
-    "Application.CalculadoraTest03.executor": "Run",
-    "Application.CalculadoraTest05.executor": "Run",
-    "Application.CarroTest01.executor": "Run",
-    "Application.EscolaTeste01.executor": "Run",
-    "Application.EstudanteTest01.executor": "Run",
-    "Application.EstudanteTest02.executor": "Run",
-    "Application.FuncionarioTest01.executor": "Run",
-    "Application.JogadorTest01.executor": "Profiler#1",
-    "Application.JogadorTeste02.executor": "Run",
-    "Application.JogadorTeste03.executor": "Run",
-    "Application.PessoaTest01.executor": "Run",
-    "Application.academy.devdojo.maratonajava.javacore.Dconstrutores.dominio.test.AnimeTest01.executor": "Run",
-    "Application.academy.devdojo.maratonajava.javacore.Eblocosinicializacao.test.AnimeTest01.executor": "Debug",
-    "Application.academy.devdojo.maratonajava.javacore.Fmodificadorestatico.test.AnimeTest01.executor": "Run",
-    "Application.academy.devdojo.maratonajava.javacore.Fmodificadorestatico.test.CarroTest01.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "main",
-    "junie.onboarding.icon.badge.shown": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/rodrigo/Documents/Materiais-De-Estudo/Curso-Java",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.AnimeTest01.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Aula08ArraysMultidimensionais02.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CalculadoraTest01.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CalculadoraTest02.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CalculadoraTest03.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CalculadoraTest05.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CarroTest01.executor&quot;: &quot;Run&quot;,
+    &quot;Application.EscolaTeste01.executor&quot;: &quot;Run&quot;,
+    &quot;Application.EstudanteTest01.executor&quot;: &quot;Run&quot;,
+    &quot;Application.EstudanteTest02.executor&quot;: &quot;Run&quot;,
+    &quot;Application.FuncionarioTest01.executor&quot;: &quot;Run&quot;,
+    &quot;Application.JogadorTest01.executor&quot;: &quot;Profiler#1&quot;,
+    &quot;Application.JogadorTeste02.executor&quot;: &quot;Run&quot;,
+    &quot;Application.JogadorTeste03.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LeituraDoTecladoTest01.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LeituraDoTecladoTest02.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PessoaTest01.executor&quot;: &quot;Run&quot;,
+    &quot;Application.academy.devdojo.maratonajava.javacore.Dconstrutores.dominio.test.AnimeTest01.executor&quot;: &quot;Run&quot;,
+    &quot;Application.academy.devdojo.maratonajava.javacore.Eblocosinicializacao.test.AnimeTest01.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.academy.devdojo.maratonajava.javacore.Fmodificadorestatico.test.AnimeTest01.executor&quot;: &quot;Run&quot;,
+    &quot;Application.academy.devdojo.maratonajava.javacore.Fmodificadorestatico.test.CarroTest01.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/rodrigo/Documents/Materiais-De-Estudo/Curso-Java&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Dconstrutores/dominio" />
@@ -111,22 +112,9 @@
       <recent name="academy.devdojo.maratonajava.javacore.Aintroducaoclasses.dominio" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.JogadorTeste03">
+  <component name="RunManager" selected="Application.LeituraDoTecladoTest02">
     <configuration name="EscolaTeste01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="academy.devdojo.maratonajava.javacore.Gassociacao.test.EscolaTeste01" />
-      <module name="Curso-Java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="academy.devdojo.maratonajava.javacore.Gassociacao.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JogadorTest01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="academy.devdojo.maratonajava.javacore.Gassociacao.test.JogadorTest01" />
       <module name="Curso-Java" />
       <extension name="coverage">
         <pattern>
@@ -164,12 +152,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="academy.devdojo.maratonajava.javacore.Fmodificadorestatico.test.AnimeTest01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="academy.devdojo.maratonajava.javacore.Fmodificadorestatico.test.AnimeTest01" />
+    <configuration name="LeituraDoTecladoTest01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="academy.devdojo.maratonajava.javacore.Gassociacao.test.LeituraDoTecladoTest01" />
       <module name="Curso-Java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="academy.devdojo.maratonajava.javacore.Fmodificadorestatico.test.*" />
+          <option name="PATTERN" value="academy.devdojo.maratonajava.javacore.Gassociacao.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LeituraDoTecladoTest02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="academy.devdojo.maratonajava.javacore.Gassociacao.test.LeituraDoTecladoTest02" />
+      <module name="Curso-Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="academy.devdojo.maratonajava.javacore.Gassociacao.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -179,19 +180,19 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LeituraDoTecladoTest02" />
+        <item itemvalue="Application.LeituraDoTecladoTest01" />
         <item itemvalue="Application.JogadorTeste03" />
         <item itemvalue="Application.EscolaTeste01" />
         <item itemvalue="Application.JogadorTeste02" />
-        <item itemvalue="Application.JogadorTest01" />
-        <item itemvalue="Application.academy.devdojo.maratonajava.javacore.Fmodificadorestatico.test.AnimeTest01" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.30387.90" />
-        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.30387.90" />
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.31033.145" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.31033.145" />
       </set>
     </attachedChunks>
   </component>
@@ -214,6 +215,11 @@
       <workItem from="1770401830286" duration="198000" />
       <workItem from="1770402035895" duration="2882000" />
       <workItem from="1770406889272" duration="3713000" />
+      <workItem from="1770423790776" duration="27000" />
+      <workItem from="1771268962018" duration="5504000" />
+      <workItem from="1771335581762" duration="2200000" />
+      <workItem from="1771618600214" duration="590000" />
+      <workItem from="1771701774290" duration="149000" />
     </task>
     <servers />
   </component>
