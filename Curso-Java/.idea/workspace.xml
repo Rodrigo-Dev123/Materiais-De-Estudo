@@ -5,13 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a1f47347-1418-4624-aabe-dfe9803fe6c8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Gassociacao/dominio/Aluno.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Gassociacao/dominio/Local.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Gassociacao/dominio/Seminario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Gassociacao/test/LeituraDoTecladoTest01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Gassociacao/test/LeituraDoTecladoTest02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Hheranca/dominio/Endereco.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Hheranca/dominio/Funcionario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Hheranca/dominio/Pessoa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Hheranca/test/Funcionario2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Hheranca/test/HerancaTest01.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Gassociacao/dominio/Professor.java" beforeDir="false" afterPath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Gassociacao/dominio/Professor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Curso-Java/academy/devdojo/maratonajava/javacore/Gassociacao/dominio/Professor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Curso-Java/academy/devdojo/maratonajava/javacore/Gassociacao/dominio/Professor.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +68,7 @@
     &quot;Application.EstudanteTest01.executor&quot;: &quot;Run&quot;,
     &quot;Application.EstudanteTest02.executor&quot;: &quot;Run&quot;,
     &quot;Application.FuncionarioTest01.executor&quot;: &quot;Run&quot;,
+    &quot;Application.HerancaTest01.executor&quot;: &quot;Run&quot;,
     &quot;Application.JogadorTest01.executor&quot;: &quot;Profiler#1&quot;,
     &quot;Application.JogadorTeste02.executor&quot;: &quot;Run&quot;,
     &quot;Application.JogadorTeste03.executor&quot;: &quot;Run&quot;,
@@ -105,14 +106,14 @@
       <recent name="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Dconstrutores/dominio" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="academy.devdojo.maratonajava.javacore.Hheranca.test" />
       <recent name="academy.devdojo.maratonajava.javacore.Gassociacao.test" />
       <recent name="academy.devdojo.maratonajava.javacore.Fmodificadorestatico.domain" />
       <recent name="academy.devdojo.maratonajava.javacore.Dconstrutores.dominio" />
       <recent name="academy.devdojo.maratonajava.javacore.Bintroducaometodos.test" />
-      <recent name="academy.devdojo.maratonajava.javacore.Aintroducaoclasses.dominio" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LeituraDoTecladoTest02">
+  <component name="RunManager" selected="Application.HerancaTest01">
     <configuration name="EscolaTeste01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="academy.devdojo.maratonajava.javacore.Gassociacao.test.EscolaTeste01" />
       <module name="Curso-Java" />
@@ -126,12 +127,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JogadorTeste02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="academy.devdojo.maratonajava.javacore.Gassociacao.test.JogadorTeste02" />
+    <configuration name="HerancaTest01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="academy.devdojo.maratonajava.javacore.Hheranca.test.HerancaTest01" />
       <module name="Curso-Java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="academy.devdojo.maratonajava.javacore.Gassociacao.test.*" />
+          <option name="PATTERN" value="academy.devdojo.maratonajava.javacore.Hheranca.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -180,11 +181,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HerancaTest01" />
         <item itemvalue="Application.LeituraDoTecladoTest02" />
         <item itemvalue="Application.LeituraDoTecladoTest01" />
         <item itemvalue="Application.JogadorTeste03" />
         <item itemvalue="Application.EscolaTeste01" />
-        <item itemvalue="Application.JogadorTeste02" />
       </list>
     </recent_temporary>
   </component>
@@ -219,7 +220,13 @@
       <workItem from="1771268962018" duration="5504000" />
       <workItem from="1771335581762" duration="2200000" />
       <workItem from="1771618600214" duration="590000" />
-      <workItem from="1771701774290" duration="149000" />
+      <workItem from="1771701774290" duration="1905000" />
+      <workItem from="1771759047159" duration="1176000" />
+      <workItem from="1771799738039" duration="96000" />
+      <workItem from="1771929673948" duration="2368000" />
+      <workItem from="1772309661059" duration="2628000" />
+      <workItem from="1772389437304" duration="1867000" />
+      <workItem from="1772660019817" duration="1899000" />
     </task>
     <servers />
   </component>
