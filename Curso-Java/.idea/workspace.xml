@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a1f47347-1418-4624-aabe-dfe9803fe6c8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Hheranca/test/HerancaTest02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Isobrescrita/dominio/Anime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Isobrescrita/dominio/test/AnimeTest01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Jmodificadorfinal/dominio/Carro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Jmodificadorfinal/test/CarroTest01.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Hheranca/dominio/Funcionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Hheranca/dominio/Funcionario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Hheranca/dominio/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Hheranca/dominio/Pessoa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Hheranca/test/Funcionario2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Hheranca/test/HerancaTest01.java" beforeDir="false" afterPath="$PROJECT_DIR$/maratona-java/src/academy/devdojo/maratonajava/javacore/Hheranca/test/HerancaTest01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Curso-Java/academy/devdojo/maratonajava/javacore/Hheranca/test/HerancaTest02.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Curso-Java/academy/devdojo/maratonajava/javacore/Hheranca/test/HerancaTest02.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,13 +112,13 @@
       <recent name="academy.devdojo.maratonajava.javacore.Bintroducaometodos.test" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.HerancaTest01">
-    <configuration name="EscolaTeste01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="academy.devdojo.maratonajava.javacore.Gassociacao.test.EscolaTeste01" />
+  <component name="RunManager" selected="Application.AnimeTest01">
+    <configuration name="AnimeTest01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="academy.devdojo.maratonajava.javacore.Isobrescrita.dominio.test.AnimeTest01" />
       <module name="Curso-Java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="academy.devdojo.maratonajava.javacore.Gassociacao.test.*" />
+          <option name="PATTERN" value="academy.devdojo.maratonajava.javacore.Isobrescrita.dominio.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -180,18 +180,18 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AnimeTest01" />
         <item itemvalue="Application.HerancaTest01" />
         <item itemvalue="Application.LeituraDoTecladoTest02" />
         <item itemvalue="Application.LeituraDoTecladoTest01" />
         <item itemvalue="Application.JogadorTeste03" />
-        <item itemvalue="Application.EscolaTeste01" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.31033.145" />
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.32098.37" />
       </set>
     </attachedChunks>
   </component>
