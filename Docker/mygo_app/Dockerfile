@@ -1,5 +1,8 @@
 FROM golang:latest AS builder
 
+LABEL maintainer="Rodrigo"
+LABEL env="production"
+
 WORKDIR /app
 COPY . .
 
