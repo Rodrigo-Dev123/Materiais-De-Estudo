@@ -5,11 +5,10 @@ LABEL env="production"
 
 WORKDIR /app
 COPY . .
-
-RUN CGO_ENABLED=0 go build -o server main.go
-ENTRYPOINT ["./server"]
-CMD ["8080"]
+RUN CGO_ENABLED=0 go build -ldflags="-s -w" -o server main.go
 
 # Final Stage
-# FROM scratch
-# COPY --from=builder /app/server /server
+FROM scratch
+USER 1001
+COPY --from=builder /app/server /server
+ENTRYPOINT ["./server"]
